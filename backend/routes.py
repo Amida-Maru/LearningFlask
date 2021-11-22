@@ -1,6 +1,8 @@
 from backend import app
 from flask import render_template
 from backend.db_modeles import Item
+from backend.forms import  RegisterForm
+from backend.forms import LoginForm
 
 
 @app.route("/home")
@@ -29,9 +31,11 @@ def account_page():
 
 @app.route("/register")
 def register_page():
-    return render_template('register.html')
+    form = RegisterForm()
+    return render_template('register.html', form=form)
 
 
 @app.route("/login")
 def login_page():
-    return render_template('login.html')
+    form = LoginForm()
+    return render_template('login.html', form=form)

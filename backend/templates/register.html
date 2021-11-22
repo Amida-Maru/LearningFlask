@@ -2,4 +2,25 @@
 {% block title %}
  Register Page
 {% endblock %}
-<h1>Register</h1>
+
+{% block content %}
+<div class="container">
+<form method="POST" class="form-register" style="color:white">
+ {{ form.username.label() }}
+ {{ form.username(class="form-control", placeholder="Enter Username") }}
+
+ {{ form. email_address.label() }}
+ {{ form. email_address(class="form-control", placeholder="Enter Email") }}
+
+ {{ form.password.label() }}
+ {{ form.password(class="form-control", placeholder="Enter Password") }}
+
+
+ {{ form.password_confirmation.label() }}
+ {{ form.password_confirmation(class="form-control", placeholder="Enter Username") }}
+
+ {{ form.submit.label() }}
+ {{ form.submit(class="form-control", placeholder="Enter Username") }}
+</form>
+ </div>
+{% endblock %}

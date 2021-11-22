@@ -2,9 +2,22 @@
 {% block title %}
  Login Page
 {% endblock %}
+
 {% block content %}
-<h1>Login</h1>
+<div class="container">
+<form method="POST" class="form-register" style="color:white">
+ {{ form.username.label() }}
+ {{ form.username(class="form-control", placeholder="Enter Username") }}
+
+ {{ form.password.label() }}
+ {{ form.password(class="form-control", placeholder="Enter Password") }}
+
+ {{ form.submit.label() }}
+ {{ form.submit(class="form-control", placeholder="Enter Username") }}
+</form>
+ </div>
 {% endblock %}
+
 
 
 <!-- Home back up page
