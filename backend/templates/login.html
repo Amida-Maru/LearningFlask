@@ -4,18 +4,32 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-<form method="POST" class="form-register" style="color:white">
- {{ form.username.label() }}
- {{ form.username(class="form-control", placeholder="Enter Username") }}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            <!-- his provides security against cross site request forgery -->
+            {{ form.hidden_tag() }}
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Please Login</h1>
 
- {{ form.password.label() }}
- {{ form.password(class="form-control", placeholder="Enter Password") }}
+             {{ form.username.label() }}
+             {{ form.username(class="form-control", placeholder="Enter Username") }}
+             {{ form.password.label() }}
+             {{ form.password(class="form-control", placeholder="Enter Password") }}
+            <br>
 
- {{ form.submit.label() }}
- {{ form.submit(class="form-control", placeholder="Enter Username") }}
-</form>
- </div>
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+            <br>
+             <div class="checkbox mb-3">
+                <h6> Need a new account?</h6>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
+            </div>
+            </form>
+    </div>
+</body>
 {% endblock %}
 
 

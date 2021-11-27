@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask import render_template
+from flask_bcrypt import Bcrypt
+
 
 # location of the template folder and the static path for images
 app = Flask(__name__, template_folder='templates', static_folder='images')
@@ -8,6 +10,5 @@ app.config ['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///shop.db'
 app.config['SECRET_KEY'] = 'dcb9e4c5437c6fe45a21a96bba02e3550971477f924a32d984e3f5c6cc73a1e9'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-
-
+bcrypt = Bcrypt(app)
 from backend import routes

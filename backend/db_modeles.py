@@ -1,5 +1,5 @@
 from backend import db
-
+from backend.__init__ import bcrypt
 # noinspection PyUnresolvedReferences
 
 
@@ -11,6 +11,14 @@ class User(db.Model):
     budget = db.Column(db.Integer(), nullable=False, default=1024)
     items = db.relationship('Item', backref='owned_user', lazy=True)
 
+    @property
+    def password(self):
+        return self.password
+
+    #This setter takes the plain password from a user and using the bcrypt.generate method creates a secure hash
+    @password.setter
+    def password(self, plain_text_password):
+        self.password_hash = bcrypt.generate_password_hash(plain_text_password).decode('utf-8')
 
 class Item(db.Model):
 
