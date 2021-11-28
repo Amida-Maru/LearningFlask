@@ -10,6 +10,7 @@ from flask import url_for
 from flask import flash #This is needed to display error msgs to the end-users
 from flask_login import login_user
 from flask_login import logout_user
+from flask_login import login_required
 
 
 @app.route("/home")
@@ -32,6 +33,8 @@ def about_page():
 
 
 @app.route("/account")
+@login_required
+
 def account_page():
     return render_template('account.html')
 
@@ -46,6 +49,8 @@ def register_page():
                                    password=form.password.data)
         db.session.add(add_new_user)
         db.session.commit()
+        login_user(add_new_user)
+        flash(f"Account has been created, you are now logged in as: {add_new_user.username}", category="success")
         return redirect(url_for('shop_page'))
     if form.errors != {}: #If there are errors from validation
         for error in form.errors.values():
@@ -72,3 +77,8 @@ def logout_page():
     logout_user()
     flash("You have been logged out!", category='info')
     return redirect(url_for("home_page"))
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('wrong_url.html'), 404
