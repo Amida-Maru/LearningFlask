@@ -8,6 +8,8 @@ from backend import db
 from flask import redirect
 from flask import url_for
 from flask import flash #This is needed to display error msgs to the end-users
+from flask_login import login_user
+from flask_login import logout_user
 
 
 @app.route("/home")
@@ -54,4 +56,19 @@ def register_page():
 @app.route("/login", methods=['GET', 'POST'])
 def login_page():
     form = LoginForm()
+    if form.validate_on_submit():
+        attempted_user = User.query.filter_by(username=form.username.data).first()
+        if attempted_user and attempted_user.check_password_login(attempted_password=form.password.data):
+            login_user(attempted_user)
+            flash(f"You are logged in as: {attempted_user.username}", category="success")
+            return redirect(url_for("shop_page"))
+        else:
+            flash('The entered credentials seem incorrect, please try again', category="danger")
     return render_template('login.html', form=form)
+
+
+@app.route("/logout")
+def logout_page():
+    logout_user()
+    flash("You have been logged out!", category='info')
+    return redirect(url_for("home_page"))

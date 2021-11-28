@@ -5,17 +5,23 @@
 
 {% block content %}
 
-<div class="container-md">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="position-relative overflow-hidden p-3 p-md-12 m-md-3  text-center bg-dark" style="color:white">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+<div class="container-md ">
   <div id="carouselExampleControls" class="carousel slide"  data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active ">
-        <img class="d-block w-100 img-fluid" src="images/home3.jpg" alt="1">
+        <img class="d-block w-100 img-fluid" src="images/homev2.jpg" alt="1">
       </div>
       <div class="carousel-item ">
-        <img class="d-block w-100 img-fluid" src="images/home1.jpg" alt="2">
+        <img class="d-block w-100 img-fluid" src="images/homev3.jpg" alt="2">
       </div>
-      <div class="carousel-item ">
-        <img class="d-block w-100 img-fluid" src="images/home2.jpg" alt="3">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -26,6 +32,24 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  <br>
+    <h1 class="display-4 font-weight-normal"> E-commerce shop</h1>
+    <p class="lead font-weight-normal">Start browsing thousands of products by clicking the button below</p>
+    <a class="btn btn-info" href="{{ url_for('shop_page')}}"> Get Started</a>
+   </div>
+</div>
+
+
+
+
+
+
+
+
   </div>
+  <div class="product-device box-shadow d-none d-md-block"></div>
+  <div class="product-device product-device-2 bo-shadow d-none d-md-block"></div>
+
+
 </div>
 {% endblock %}
