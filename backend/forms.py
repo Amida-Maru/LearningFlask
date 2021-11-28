@@ -33,7 +33,7 @@ class RegisterForm(FlaskForm):
 
 class LoginForm(FlaskForm):
 
-    username = StringField(label='User Name:', validators=[length(min=4, max=32), data_required()])
-    password = PasswordField(label='Password:', validators=[length(min=8, max=64), data_required()])
+    username = StringField(label='User Name:', validators=[data_required()])
+    password = PasswordField(label='Password:', validators=[data_required()])
     submit = SubmitField(label='Log in')
 
