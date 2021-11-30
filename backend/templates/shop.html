@@ -3,32 +3,23 @@
     Shop Page
 {% endblock %}
 {% block content %}
-<h1>Test</h1>
-    <div class="container">
-      <table class="table table-hover table-dark">
-          <thead>
-            <tr>
-              <th class="align-middle" scope="col">ID </th>
-              <th class="align-middle" scope="col">Name </th>
-              <th class="align-middle" scope="col">Barcode </th>
-              <th class="align-middle" scope="col">Price </th>
-              <th class="align-middle" scope="col">Options </th>
-            </tr>
-          </thead>
-          <tbody>
-          {% for item in items %}
-          <tr>
-              <td class="align-middle"> {{item.id}}</td>
-              <td class="align-middle"> {{item.name}}</td>
-              <td class="align-middle"> {{item.barcode}}</td>
-              <td class="align-right"> {{item.price}}</td>
-              <td>
-                  <button class="btn btn-outline btn-info"> Details</button>
-                  <button class="btn btn-outline btn-success"> Purchase this Item</button>
-              </td>
-          </tr>
-          {% endfor %}
-          </tbody>
-      </table>
+<div class="container-fluid">
+    <div class="row" style="margin-left:5%; margin-right:5%; margin-top:0.10%;">
+        {% for item in items %}
+        <div class="col-sm-4 mt-4">
+            <div class="card">
+                <img src="" alt="">
+                <div class="card-body" >
+                    <h5 class="text-center text-dark"> {{item.name}}</h5>
+                    <p class="text-center text-dark"> {{item.price }} GBP</p>
+                </div>
+                <div class="card-footer" >
+                    <a  href="" class="float-left btn btn-md btn-warning container-fluid mt-2">Details</a>
+                    <a href="" class="float-right btn btn-md btn-success container-fluid mt-2">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
+</div>
 {% endblock %}
