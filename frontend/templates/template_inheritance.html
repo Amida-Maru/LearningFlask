@@ -1,0 +1,97 @@
+<html class="no-js" lang="">
+<head>
+    <!-- meta charset -->
+    <meta charset="utf-8">
+    <!-- site title -->
+    <title>League of Legends - Esports Hub</title>
+    <!-- meta description -->
+    <meta content="" name="description">
+    <!-- mobile viwport meta -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- fevicon -->
+    <link href="/static/fav_icon.png" rel="shortcut icon" type="image/x-icon">
+
+    <!-- styled CSS -->
+
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800"
+          rel="stylesheet">
+    <link href="/static/css/themefisher-fonts.min.css" rel="stylesheet">
+    <link href="/static/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/dark.css" rel="stylesheet">
+    <link href="/static/css/colors/color-0.css" id="color-changer" rel="stylesheet">
+</head>
+
+
+
+<!-- animation  -->
+<body class="dark">
+
+<div class="preloader">
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+</div>
+
+
+<!-- navigation main menu -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- Replace the href=/home element and replace it with jinja -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home_page') }}">Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about_game') }}">About Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about_esports') }}">About Esports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('useful_websites') }}">Useful Websites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('account_page') }}">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact_page') }}">Contact</a>
+                </li>
+            </ul>
+            <!-- menu on the right -->
+        </div>
+    </nav>
+
+<!-- Custom content for pages -->
+{% block content %}
+{% endblock %}
+
+
+<footer class="text-center">
+    Copyright &copy; 2022 League of Legends - Esports Hub
+</footer>
+<!-- ================================
+      JavaScript Libraries
+      ================================= -->
+<script src="/static/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="/static/js/vendor/bootstrap.min.js"></script>
+<script src="/static/js/jquery.easing.min.js"></script>
+<script src="/static/js/isotope.pkgd.min.js"></script>
+<script src="/static/js/jquery.nicescroll.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/jquery-validation.min.js"></script>
+<script src="/static/js/form.min.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
