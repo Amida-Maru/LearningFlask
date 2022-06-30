@@ -60,12 +60,12 @@ p:last-child {
  * Selection color
  */
 ::-moz-selection {
-  background-color: #FA6862;
+  background-color: #ffcc00;
   color: #fff;
 }
 
 ::selection {
-  background-color: #FA6862;
+  background-color: #ffcc00;
   color: #fff;
 }
 
@@ -114,7 +114,7 @@ textarea, label {
 }
 
 .btn-primary {
-  background-color: #FA6862;
+  background-color: #ffcc00;
   border: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -124,7 +124,7 @@ textarea, label {
   text-transform: uppercase;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
-  background-color: #f9423a;
+  background-color: #ffcc00;
 }
 
 .btn-border {
@@ -208,7 +208,7 @@ textarea, label {
 }
 
 .nicescroll-cursors {
-  background: #FA6862 !important;
+  background: #FFD700 !important;
 }
 
 .preloader {
@@ -229,7 +229,7 @@ textarea, label {
 }
 
 .loading-mask {
-  background-color: #FA6862;
+  background-color: #ffcc00;
   height: 100%;
   left: 0;
   position: absolute;
@@ -280,7 +280,7 @@ textarea, label {
 	Start Styling
 -------------------------------------------------*/
 .site-wrapper {
-  border-top: 4px solid #FA6862;
+  border-top: 4px solid #FFD700;
 }
 
 .page-close {
@@ -342,19 +342,19 @@ textarea, label {
   left: calc(100% + 14px);
 }
 .section-title h3::before {
-  background-color: #1e2530;
+  background-color: #FFD700;
   width: 96px;
   bottom: 14px;
 }
 .section-title h3::after {
-  background-color: #FA6862;
+  background-color: #FFD700;
   width: 73px;
 }
 .section-title.light h3 {
   color: #fff;
 }
 .section-title.light h3::before {
-  background-color: #fff;
+  background-color: #FFD700;
 }
 
 .page-nav {
@@ -381,7 +381,7 @@ textarea, label {
   vertical-align: middle;
 }
 .page-home .overlay {
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: rgba(0, 0, 1, 0.93);
 }
 
 /* End of container */
@@ -427,7 +427,7 @@ textarea, label {
 }
 .hexagon-item:hover .hex-item div::before,
 .hexagon-item:hover .hex-item div::after {
-  background-color: #FA6862;
+  background-color: #FFD700;
 }
 .hexagon-item:hover .hex-content svg {
   -webkit-transform: scale(0.97);
@@ -483,7 +483,7 @@ textarea, label {
   transform-origin: center center;
 }
 .hex-item div::before, .hex-item div::after {
-  background-color: #1e2530;
+  background-color: #1e2530; /*hex colour change */
   content: "";
   position: absolute;
   width: 100%;
@@ -522,7 +522,7 @@ textarea, label {
 }
 
 .hex-content {
-  color: #fff;
+  color: #FFD700;
   display: block;
   height: 180px;
   margin: 0 auto;
@@ -661,7 +661,7 @@ textarea, label {
   flex-grow: 1;
 }
 .progress .bar {
-  background-color: #FA6862;
+  background-color: #FFD700;
   border-radius: 10px;
   height: 8px;
   width: 0;
@@ -688,8 +688,8 @@ textarea, label {
   border-bottom: 2px solid transparent;
 }
 .filter .active {
-  color: #FA6862;
-  border-bottom-color: #FA6862;
+  color: #FFD700;
+  border-bottom-color: #FFD700;
 }
 
 .works-item {
@@ -929,7 +929,7 @@ textarea, label {
   transform: scale(1.5);
 }
 .service-hex:hover .st1 {
-  fill: #FA6862;
+  fill: #FFD700;
 }
 .service-hex:hover .content {
   width: 135%;
@@ -994,7 +994,7 @@ textarea, label {
   transition: all 0.3s ease 0s;
 }
 .testimonials .owl-dot.active {
-  border-color: #FA6862;
+  border-color: #FFD700;
 }
 
 .tm-hex {
@@ -1122,13 +1122,13 @@ textarea, label {
   transform: translate(-50%, -50%);
 }
 .contact-social li:hover span {
-  background-color: #FA6862;
+  background-color: #FFD700;
 }
 .contact-social li:hover span::before {
-  border-bottom-color: #FA6862;
+  border-bottom-color: #FFD700;
 }
 .contact-social li:hover span::after {
-  border-top-color: #FA6862;
+  border-top-color: #FFD700;
 }
 
 .contact-social-hex {
@@ -1164,10 +1164,9 @@ textarea, label {
   border-top: 12.41px solid #1e2530;
 }
 .contact-social-hex:hover::after {
-  border-bottom-color: #FA6862;
-}
+  border-bottom-color: #FFD700
 .contact-social-hex:hover::before {
-  border-top-color: #FA6862;
+  border-top-color: #FFD700;
 }
 
 .contact-form .input-field {
@@ -1229,7 +1228,7 @@ textarea, label {
 }
 
 .msg-success {
-  color: #FA6862;
+  color: #FFD700;
 }
 
 .pt-table.desktop-768 .pt-tablecell {
