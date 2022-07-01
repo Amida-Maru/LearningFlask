@@ -12,64 +12,73 @@
     <link href="/static/fav_icon.png" rel="shortcut icon" type="image/x-icon">
 
     <!-- styled CSS -->
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link href="../static/style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800"
-          rel="stylesheet">
-    <link href="/static/css/themefisher-fonts.min.css" rel="stylesheet">
-    <link href="/static/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/main.css" rel="stylesheet">
-    <link href="/static/css/dark.css" rel="stylesheet">
-    <link href="/static/css/colors/color-0.css" id="color-changer" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+  <link href="static/js/esports_pages/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/js/esports_pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/js/esports_pages/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/js/esports_pages/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/esports_pages/style.css" rel="stylesheet">
+
+
 </head>
 
-<!-- animation  -->
-<body class="dark">
-<div class="preloader">
-    <div class="loading-mask"></div>
-    <div class="loading-mask"></div>
-    <div class="loading-mask"></div>
-    <div class="loading-mask"></div>
-    <div class="loading-mask"></div>
-</div>
+  <!-- ======= Header/Navbar ======= -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="home">Esports<span class="color-b">Hub</span></a>
 
-<!-- navigation main menu -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <button class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-            <!-- Replace the href=/home element and replace it with jinja -->
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('home_page') }}">Home<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('about_game') }}">About Game</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('about_esports') }}">About Esports</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('useful_websites') }}">Useful Websites</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('account_page') }}">Account</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('contact_page') }}">Contact</a>
-            </li>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link " href="{{ url_for('home_page') }}">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="{{ url_for('about_game') }}">About Game</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="{{ url_for('about_esports') }}">About Esports</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="{{ url_for('useful_websites') }}">Useful Websites</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="{{ url_for('account_page') }}">Account</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="{{ url_for('contact_page') }}">Contact</a>
+          </li>
         </ul>
+      </div>
     </div>
-</nav>
+  </nav><!-- End Header/Navbar -->
+
+
 
 <!-- ================================
       Accessability features
       ================================= -->
-
+<br>
+<br>
+<section class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 position-relative">
 <!-- Accessability Window -->
 <div class="social-panel-container">
 	<div class="social-panel">
@@ -105,7 +114,10 @@
 <button class="floating-btn">
 	Accessbility Features
 </button>
-
+          </div>
+        </div>
+      </div>
+</section>s
 <!-- Custom content for pages -->
 {% block content %}
 {% endblock %}
