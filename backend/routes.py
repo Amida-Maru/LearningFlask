@@ -29,14 +29,38 @@ def about_game():
     return render_template('about_game.html')
 
 
+@app.route("/game_glossary.html")
+def game_glossary():
+    return render_template('game_glossary.html')
+
+
 @app.route("/about_esports.html")
 def about_esports():
     return render_template('about_esports.html')
 
 
+@app.route("/esports_glossary.html")
+def esports_glossary():
+    return render_template('esports_glossary.html')
+
+
 @app.route("/useful_websites.html")
 def useful_websites():
     return render_template('useful_websites.html')
+
+@app.route("/lolfandom.html")
+def lolfandom():
+    return render_template('lolfandom.html')
+
+@app.route("/lolesports.html")
+def lolesports():
+    return render_template('lolesports.html')
+
+@app.route("/lolpros.html")
+def lolpros():
+    return render_template('lolpros.html')
+
+
 
 
 @app.route("/account.html")

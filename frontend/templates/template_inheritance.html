@@ -35,7 +35,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="home">Esports<span class="color-b">Hub</span></a>
+      <a class="navbar-brand text-brand" href="/">Esports<span class="color-b">Hub</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -44,16 +44,28 @@
             <a class="nav-link " href="{{ url_for('home_page') }}">Home</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" href="{{ url_for('about_game') }}">About Game</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{ url_for('about_game') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Game</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item " href="{{ url_for('game_glossary') }}">Game Glossary</a>
+          </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link " href="{{ url_for('about_esports') }}">About Esports</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{ url_for('about_esports') }}" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Game</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item " href="{{ url_for('esports_glossary') }}">Esports Glossary</a>
+          </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link " href="{{ url_for('useful_websites') }}">Useful Websites</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{ url_for('useful_websites') }}" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Useful Websites</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item " href="{{ url_for('lolfandom') }}">lol.fandom.com</a>
+              <a class="dropdown-item " href="{{ url_for('lolesports') }}">lolesports.com</a>
+               <a class="dropdown-item " href="{{ url_for('lolpros') }}">lolpros.gg</a>
+
+          </div>
           </li>
 
           <li class="nav-item">
@@ -63,6 +75,7 @@
           <li class="nav-item">
             <a class="nav-link " href="{{ url_for('contact_page') }}">Contact</a>
           </li>
+
         </ul>
       </div>
     </div>

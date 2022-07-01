@@ -676,7 +676,7 @@ a:hover {
 }
 @media (min-width: 768px) {
   .navbar-default .dropdown .dropdown-menu {
-    border-top: 4px solid #2eca6a;
+    border-top: 4px solid #A18f5c;
     border-left: 0;
     display: block;
     position: absolute;
@@ -691,11 +691,11 @@ a:hover {
 }
 .navbar-default .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #ffffff;
-  color: #2eca6a;
+  color: #c7a904;
   transition: all 500ms ease;
 }
 .navbar-default .dropdown .dropdown-menu .dropdown-item.active {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #2eca6a;
 }
 .navbar-default .dropdown:hover .dropdown-menu {
@@ -1627,6 +1627,7 @@ a:hover {
   width: 300px;
   font-weight: 700;
   text-align: right;
+
 }
 
 .about-img-box {
@@ -1918,5 +1919,3 @@ footer .copyright-footer {
 footer .credits {
   font-size: 14px;
 }
-
-
