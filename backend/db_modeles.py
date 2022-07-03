@@ -2,6 +2,7 @@ from backend import db
 from backend import bcrypt
 from backend import login_manager
 from flask_login import UserMixin
+from sqlalchemy.sql import func
 # noinspection PyUnresolvedReferences
 
 
@@ -15,8 +16,9 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(length=32), nullable=False, unique=True)
     email_address = db.Column(db.String(length=64), nullable=False, unique=True)
     password_hash = db.Column(db.String(length=512), nullable=False)
-    budget = db.Column(db.Integer(), nullable=False, default=1024)
-    items = db.relationship('Item', backref='owned_user', lazy=True)
+    notes = db.relationship('Note')
+
+
 
     @property
     def password(self):
@@ -31,14 +33,12 @@ class User(db.Model, UserMixin):
         return bcrypt.check_password_hash(self.password_hash, attempted_password)
 
 
-class Item(db.Model):
-
-    note_id = db.Column(db.Integer(), primary_key=True)
-    note_title = db.Column(db.String(length=64), nullable=False, unique=True)
-    note_body = db.Column(db.String(length=2048), nullable=False, unique=True)
-    note_date = db.Column(db.String(length=8), nullable=False, unique=True)
-    note_owner = db.Column(db.Integer(), db.ForeignKey('user.id'))
-
+class Note(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(256))
+    text = db.Column(db.String(2048))
+    time = db.Column(db.DateTime(timezone=True), default=func.now())
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
 
     def __repr__(self):
         return f'User {self.name}'

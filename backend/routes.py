@@ -1,6 +1,7 @@
 from backend import app
+from flask import Blueprint,render_template,request,redirect,flash,url_for
 from flask import render_template
-from backend.db_modeles import User
+from backend.db_modeles import User, Note
 from backend import db
 from backend.forms import RegisterForm
 from backend.forms import LoginForm
@@ -10,8 +11,11 @@ from flask import flash  # This is needed to display error msgs to the end-users
 from flask_login import login_user
 from flask_login import logout_user
 from flask_login import login_required
+from flask_login import current_user
 from datetime import timedelta
+from backend.db_modeles import Note
 
+views = Blueprint('views',__name__)
 
 @app.route("/")
 @app.route("/landing_page")
@@ -61,13 +65,76 @@ def lolpros():
     return render_template('lolpros.html')
 
 
-
-
-@app.route("/account.html")
+@app.route('/account.html',methods=['GET','POST'])
 @login_required
 def account_page():
     form = LoginForm()
+    if request.method == 'POST':
+        title = request.form.get('title')
+        note = request.form.get('note')
+
+        if len(note) < 1:
+            flash('Note is too short, please write in detail !!!', category="error")
+        else:
+            new_note = Note(title=title, text=note, user_id=current_user.id)
+
+            db.session.add(new_note)
+            db.session.commit()
+            flash(' your note is added', category='success')
+            print("Note added")
     return render_template('account.html', form=form)
+
+
+
+@views.route("/all-users")
+@login_required
+def allUsers():
+    all_users=User.query.all()
+    var=[]
+    for user in all_users:
+        notes=Note.query.filter_by(user_id=user.id).all()
+        if len(notes)>0:
+            var.append(len(notes))
+        else:
+            var.append(0)
+    zipped=zip(all_users,var)
+
+
+    return render_template("showusers.html",all_users=zipped,user=current_user)
+
+
+@views.route('/delete/<int:id>',methods=['GET','POST'])
+@login_required
+def deleteNote(id):
+    note = Note.query.filter_by(id=id).first()
+    if note:
+        db.session.delete(note)
+        db.session.commit()
+        flash("your note is successfully deleted", category="success")
+    return render_template("index.html",user=current_user)
+
+@views.route('/update/<int:id>',methods=['GET','POST'])
+@login_required
+def updateNote(id):
+    if request.method == 'POST':
+        title=request.form['title']
+        text=request.form['note']
+        note = Note.query.filter_by(id=id).first()
+        note.title=title
+        note.text=text
+        db.session.add(note)
+        db.session.commit()
+        return render_template("index.html",user=current_user)
+
+    note_update = Note.query.filter_by(id=id).first()
+    return render_template("update.html",nu=note_update,user=current_user)
+
+@views.route("/details/<int:id>",methods=['GET','POST'])
+@login_required
+def details(id):
+    note_update = Note.query.filter_by(id=id).first()
+    return render_template("details.html",nu=note_update,user=current_user)
+
 
 
 @app.route("/contact.html")
