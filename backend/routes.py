@@ -71,21 +71,24 @@ def account_page():
     form = LoginForm()
 
     note = Note.query.filter(True)
+    select = request.form.get('comp_select')
+
 
     if request.method == 'POST':
+        category = request.form.get('category')
         title = request.form.get('title')
         note = request.form.get('note')
 
         if len(note) < 1:
             flash('Note is too short, please write in detail !!!', category="error")
         else:
-            new_note = Note(title=title, text=note, user_id=current_user.id)
+            new_note = Note(category=category, title=title, text=note, user_id=current_user.id)
 
             db.session.add(new_note)
             db.session.commit()
             flash(' your note is added', category='success')
             print("Note added")
-    return render_template('account.html', form=form, user=current_user, note=note )
+    return render_template('account.html', form=form, user=current_user)
 
 
 @app.route('/account<int:id>.html', methods=['GET', 'POST'])

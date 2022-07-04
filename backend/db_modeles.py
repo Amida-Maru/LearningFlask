@@ -35,8 +35,9 @@ class User(db.Model, UserMixin):
 
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(256))
-    text = db.Column(db.String(2048))
+    title = db.Column(db.String(32))
+    text = db.Column(db.String(128))
+    category = db.Column(db.String(32))
     time = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
 
