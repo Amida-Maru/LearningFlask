@@ -12,13 +12,41 @@
             <div class="form-group row">
             <label for="note-desc" class="col-sm-2 col-form-label">Note Description</label>
             <div class="col-sm-10">
-                <textarea class="form-control" rows="4" name="note"></textarea>
+                <textarea class="form-control" rows="4" name="note" placeholder="Enter Note Body"></textarea>
             </div>
             </div>
             <button type="submit"  class="btn btn-dark">Add Note</button>
         </form>
     </div>
+<div class= "container mt-3">
+        <table class="table">
+            {% if user.notes|length ==0  %}
+            <div class="alert alert-danger" role="alert">
+                There is no note, ADD your first note now!!
+            </div>
+            {% else %}
 
-
+            <thead class="table-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Data</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for note in user.notes %}
+                <tr>
+                  <td>{{note.title}}</td>
+                  <td>{{note.text}}</td>
+                  <td>
+                      <a href= "{{url_for('delete_note', id = note.id)}}" type="button" class="btn btn-success btn-sm mx-2">Delete</button></a>
+                      <a href="{{url_for('update_note', id = note.id)}}" type="button" class="btn btn-danger btn-sm mx-2">Update</button></a>
+                </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+              </tbody>
+          </table>
+    </div>
 
 {% endblock %}

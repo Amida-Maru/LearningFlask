@@ -65,10 +65,13 @@ def lolpros():
     return render_template('lolpros.html')
 
 
-@app.route('/account.html',methods=['GET','POST'])
+@app.route('/account.html', methods=['GET', 'POST'])
 @login_required
 def account_page():
     form = LoginForm()
+
+    note = Note.query.filter(True)
+
     if request.method == 'POST':
         title = request.form.get('title')
         note = request.form.get('note')
@@ -82,59 +85,36 @@ def account_page():
             db.session.commit()
             flash(' your note is added', category='success')
             print("Note added")
-    return render_template('account.html', form=form)
+    return render_template('account.html', form=form, user=current_user, note=note )
 
 
-
-@views.route("/all-users")
+@app.route('/account<int:id>.html', methods=['GET', 'POST'])
 @login_required
-def allUsers():
-    all_users=User.query.all()
-    var=[]
-    for user in all_users:
-        notes=Note.query.filter_by(user_id=user.id).all()
-        if len(notes)>0:
-            var.append(len(notes))
-        else:
-            var.append(0)
-    zipped=zip(all_users,var)
-
-
-    return render_template("showusers.html",all_users=zipped,user=current_user)
-
-
-@views.route('/delete/<int:id>',methods=['GET','POST'])
-@login_required
-def deleteNote(id):
+def delete_note(id):
     note = Note.query.filter_by(id=id).first()
     if note:
         db.session.delete(note)
         db.session.commit()
         flash("your note is successfully deleted", category="success")
-    return render_template("index.html",user=current_user)
+    return redirect("/account.html", code=302)
 
-@views.route('/update/<int:id>',methods=['GET','POST'])
+
+@app.route('/update<int:id>.html', methods=['GET', 'POST'])
 @login_required
-def updateNote(id):
+def update_note(id):
     if request.method == 'POST':
-        title=request.form['title']
-        text=request.form['note']
+        title = request.form['title']
+        text = request.form['note']
         note = Note.query.filter_by(id=id).first()
-        note.title=title
-        note.text=text
+        note.title = title
+        note.text = text
         db.session.add(note)
         db.session.commit()
-        return render_template("index.html",user=current_user)
+        return redirect("/account.html", code=302)
+
 
     note_update = Note.query.filter_by(id=id).first()
-    return render_template("update.html",nu=note_update,user=current_user)
-
-@views.route("/details/<int:id>",methods=['GET','POST'])
-@login_required
-def details(id):
-    note_update = Note.query.filter_by(id=id).first()
-    return render_template("details.html",nu=note_update,user=current_user)
-
+    return render_template("update.html", nu=note_update, user=current_user)
 
 
 @app.route("/contact.html")
