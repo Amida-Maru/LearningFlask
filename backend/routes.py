@@ -1,5 +1,5 @@
 from backend import app
-from flask import Blueprint,render_template,request,redirect,flash,url_for
+from flask import Blueprint, render_template, request, redirect, flash, url_for
 from flask import render_template
 from backend.db_modeles import User, Note
 from backend import db
@@ -14,8 +14,12 @@ from flask_login import login_required
 from flask_login import current_user
 from datetime import timedelta
 from backend.db_modeles import Note
+import smtplib
+from email.message import EmailMessage
 
-views = Blueprint('views',__name__)
+
+views = Blueprint('views', __name__)
+
 
 @app.route("/")
 @app.route("/landing_page")
@@ -52,13 +56,16 @@ def esports_glossary():
 def useful_websites():
     return render_template('useful_websites.html')
 
+
 @app.route("/lolfandom.html")
 def lolfandom():
     return render_template('lolfandom.html')
 
+
 @app.route("/lolesports.html")
 def lolesports():
     return render_template('lolesports.html')
+
 
 @app.route("/lolpros.html")
 def lolpros():
@@ -72,7 +79,6 @@ def account_page():
 
     note = Note.query.filter(True)
     select = request.form.get('comp_select')
-
 
     if request.method == 'POST':
         category = request.form.get('category')
@@ -115,13 +121,36 @@ def update_note(id):
         db.session.commit()
         return redirect("/account.html", code=302)
 
-
     note_update = Note.query.filter_by(id=id).first()
     return render_template("update.html", nu=note_update, user=current_user)
 
 
-@app.route("/contact.html")
+@app.route("/contact.html", methods=['GET', 'POST'])
 def contact_page():
+
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login("lolesportshub@gmail.com", "ptdbuoiqvfnhpcvo")
+
+
+    if request.method == 'POST':
+        msg_confirmation = EmailMessage()
+        msg_confirmation.set_content("Dear " + request.form.get(
+            "name") + ",\n\nThank you for your email! \n\nA member of the lolesportshub team will take a look at your message and will get back to you as soon as possible. \n\nBest Regards, \n\nlolesportshub " "\n\n\n\nHere is the copy of your original message to us: \n\n" + request.form.get(
+            "message"))
+        msg_confirmation['Subject'] = "We received your message"
+        msg_confirmation['From'] = "lolesportshub@gmail.com"
+        msg_confirmation['To'] = request.form.get("email")
+
+        msg_actual = EmailMessage()
+        msg_actual.set_content(request.form.get("message"))
+        msg_actual['Subject'] = request.form.get("subject") + " - Sent by: " + request.form.get("email")
+        msg_actual['From'] = "lolesportshub@gmail.com"
+        msg_actual['To'] = "lolesportshub@gmail.com"
+        server.send_message(msg_actual)
+        server.send_message(msg_confirmation)
+        server.quit()
+
     return render_template('contact.html')
 
 
@@ -160,6 +189,7 @@ def register_page():
         for error in form.errors.values():
             flash(f'There was an error:  {error}', category="danger")
     return render_template('register.html', form=form)
+
 
 @app.route("/logout")
 def logout_page():

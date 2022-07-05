@@ -1,15 +1,129 @@
 {% extends 'template_inheritance.html' %}
 {% block content %}
-<div class="container">
-    <div class="content" id="text">
-        <h2>Change Font Size</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tincidunt diam. Sed luctus risus id
-            molestie ultrices. Nulla tincidunt varius justo at gravida. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Donec sodales ullamcorper erat, nec commodo dolor semper a. Morbi
-            in nunc auctor, aliquam lacus ut, pharetra felis. Aliquam mi erat, laoreet et varius sit amet, malesuada id
-            dui. Nam vitae tempor dui, quis convallis velit. Maecenas vulputate sagittis arcu, ac congue augue cursus
-            nec. Phasellus ut metus sem. Praesent in rutrum ligula, sit amet porta quam. Aenean mollis bibendum massa, a
-            faucibus sapien porttitor sit amet.</p>
-    </div>
-</div>
+<!-- ======= Contact Single ======= -->
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+
+                <div class="col-sm-12 section-t8">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h1>Welcome to the Contact Page</h1>
+                          <form action="{{contact_page}}" method="post" role="form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input class="form-control form-control-lg form-control-a" name="name"
+                                                   placeholder="Your Name/Username"
+                                                   required type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input class="form-control form-control-lg form-control-a" name="email"
+                                                   placeholder="Your Email"
+                                                   required type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                            <input class="form-control form-control-lg form-control-a" name="subject"
+                                                   placeholder="Subject"
+                                                   required type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" cols="45" name="message" name="message"
+                                                      placeholder="Message" required rows="8"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12 text-center">
+                                         <br>
+                                        <button class="btn btn-a" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-5 section-md-t3">
+                            <div class="icon-box section-b2">
+                                <div class="icon-box-icon">
+                                    <span class="bi bi-envelope"></span>
+                                </div>
+                                <div class="icon-box-content table-cell">
+                                    <div class="icon-box-title">
+                                        <h4 class="icon-title">Say Hello</h4>
+                                    </div>
+                                    <div class="icon-box-content">
+                                        <p class="mb-1">Email.
+                                            <span class="color-a">lolesportshub@gmail.com</span>
+                                        </p>
+                                        <p class="mb-1">Phone.
+                                            <span class="color-a">+07731523033</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box section-b2">
+                                <div class="icon-box-icon">
+                                    <span class="bi bi-geo-alt"></span>
+                                </div>
+                                <div class="icon-box-content table-cell">
+                                    <div class="icon-box-title">
+                                        <h4 class="icon-title">Find us in</h4>
+                                    </div>
+                                    <div class="icon-box-content">
+                                        <p class="mb-1">
+                                            Scotland,
+                                            <br>  Falkirk
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box">
+                                <div class="icon-box-icon">
+                                    <span class="bi bi-share"></span>
+                                </div>
+                                <div class="icon-box-content table-cell">
+                                    <div class="icon-box-title">
+                                        <h4 class="icon-title">Social networks</h4>
+                                    </div>
+                                    <div class="icon-box-content">
+                                        <div class="socials-footer">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="link-one" href="#">
+                                                        <i aria-hidden="true" class="bi bi-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="link-one" href="#">
+                                                        <i aria-hidden="true" class="bi bi-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="link-one" href="#">
+                                                        <i aria-hidden="true" class="bi bi-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="link-one" href="#">
+                                                        <i aria-hidden="true" class="bi bi-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section><!-- End Contact Single-->
 {% endblock %}
