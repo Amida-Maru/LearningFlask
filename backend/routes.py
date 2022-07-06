@@ -21,13 +21,11 @@ from email.message import EmailMessage
 views = Blueprint('views', __name__)
 
 
-@app.route("/")
-@app.route("/landing_page")
-def landing_page():
-    return render_template('landing_page.html')
+
 
 
 @app.route("/home")
+@app.route("/")
 def home_page():
     return render_template('index.html')
 
