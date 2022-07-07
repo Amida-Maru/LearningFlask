@@ -6,7 +6,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #555555;
-  background-color: #;
+  background-color: var(--primary-color);
 }
 
 h1,
@@ -15,7 +15,34 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000000;
+  color: var(--secondary-color);
+}
+
+
+
+p.color-text-a{
+
+color: var(--third-color);
+}
+
+
+p.section-small{
+color: var(--third-color);
+}
+
+input.form-control.form-control-lg.form-control-a{
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+span.color-a{
+  color: var(--secondary-color);
+}
+
+textarea.form-control.form-control-lg.form-control-a{
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
 }
 
 a {
@@ -241,7 +268,7 @@ a:hover {
 
 /*------/ Space Padding /------*/
 .section-t8 {
-  padding-top: 8rem;
+  padding-top: 5rem;
 }
 @media (max-width: 767px) {
   .section-t8 {
@@ -502,20 +529,20 @@ a:hover {
 //--//-->   BUTTON
 ======================================*/
 .btn {
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 }
 .btn.btn-a, .btn.btn-b {
-  border-radius: 0;
-  padding: 1rem 3rem;
+  border-radius: 5px;
+  padding: 0.75rem 3rem;
   letter-spacing: 0.05rem;
 }
 .btn.btn-a {
   text-decoration: none;
-  background-color: #000000;
+  background-color: #6c757d;
   color: #ffffff;
 }
 .btn.btn-a:hover {
-  background-color: #2eca6a;
+  background-color: #FFD700;
   color: #000000;
 }
 .btn.btn-b {
@@ -993,11 +1020,11 @@ a:hover {
 
 /*------/ Intro Single /------*/
 .intro-single {
-  padding: 12rem 0 3rem;
+  padding: 4rem 0 3rem;
 }
 @media (max-width: 767px) {
   .intro-single {
-    padding-top: 9rem;
+    padding-top: 4rem;
   }
 }
 .intro-single .title-single-box {
@@ -1788,7 +1815,7 @@ a:hover {
 }
 
 footer {
-  background: #f3f3f3;
+  background: var(--primary-color);
   text-align: center;
   padding: 30px 0;
 
@@ -1810,10 +1837,20 @@ footer .credits {
 }
 
 
-body.dark {
-	background: #2b2b2b;
+:root {
+
+--primary-color: #;
+--secondary-color: #;
+}
+
+
+.dark-theme {
+    --primary-color: #2b2b2b;
+    --secondary-color: #fff;
+    --third-color: #dddddd
 
 }
+
 
 .checkbox {
 	opacity: 0;

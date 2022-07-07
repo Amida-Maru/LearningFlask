@@ -1,57 +1,83 @@
 {% extends 'template_inheritance.html' %}
 {% block content %}
-<!-- ======= Contact Single ======= -->
-<section class="contact">
+<!-- Start Intro Single-->
+                <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-single-box">
+              <h1 class="title-single">Say Hello!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- End Intro Single-->
+
+
+<section class="contact ">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 ">
 
 
-                <div class="col-sm-12 section-t8">
+
+
+
+<div class="col-sm-12 ">
                     <div class="row">
-                        <div class="col-md-7">
-                            <h1>Welcome to the Contact Page</h1>
-                          <form action="{{contact_page}}" method="post" role="form">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <div class="form-group">
-                                            <input class="form-control form-control-lg form-control-a" name="name"
-                                                   placeholder="Your Name/Username"
-                                                   required type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <div class="form-group">
-                                            <input class="form-control form-control-lg form-control-a" name="email"
-                                                   placeholder="Your Email"
-                                                   required type="email">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 mb-3">
-                                        <div class="form-group">
-                                            <input class="form-control form-control-lg form-control-a" name="subject"
-                                                   placeholder="Subject"
-                                                   required type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" cols="45" name="message" name="message"
-                                                      placeholder="Message" required rows="8"></textarea>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-md-12 text-center">
-                                         <br>
-                                        <button class="btn btn-a" type="submit">Send Message</button>
-                                    </div>
+                <div class="col-md-9">
+                    <h2>Contact Form</h2>
+                    <form action="{{contact_page}}" method="post" role="form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <input class="form-control form-control-lg form-control-a" name="name"
+                                           placeholder="Your Name/Username"
+                                           required type="text">
                                 </div>
-                            </form>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <input class="form-control form-control-lg form-control-a" name="email"
+                                           placeholder="Your Email"
+                                           required type="email">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                    <input class="form-control form-control-lg form-control-a" name="subject"
+                                           placeholder="Subject"
+                                           required type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                            <textarea class="form-control form-control-lg form-control-a" cols="45"
+                                                      name="message"
+                                                      placeholder="Message" required rows="8"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12 text-center">
+                                <br>
+                                <button class="btn btn-a" type="submit">Send Message</button>
+
+                            </div>
                         </div>
-                        <div class="col-md-5 section-md-t3">
+                    </form>
+
+                </div>
+                <!-- end of form -->
+
+<!-- start of about us section -->
+
+
+
+                        <div class="col-lg-3 section-t8">
                             <div class="icon-box section-b2">
-                                <div class="icon-box-icon">
+                                <div class="col-lg-3 ">
                                     <span class="bi bi-envelope"></span>
                                 </div>
                                 <div class="icon-box-content table-cell">
@@ -59,28 +85,32 @@
                                         <h4 class="icon-title">Say Hello</h4>
                                     </div>
                                     <div class="icon-box-content">
-                                        <p class="mb-1">Email.
+                                        <p class="mb-1">Email:
                                             <span class="color-a">lolesportshub@gmail.com</span>
                                         </p>
-                                        <p class="mb-1">Phone.
-                                            <span class="color-a">+07731523033</span>
+                                        <p class="mb-1">Phone:
+                                            <span class="color-a">+447731523033</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="icon-box section-b2">
-                                <div class="icon-box-icon">
+                                <div class="col-lg-3">
                                     <span class="bi bi-geo-alt"></span>
                                 </div>
                                 <div class="icon-box-content table-cell">
                                     <div class="icon-box-title">
-                                        <h4 class="icon-title">Find us in</h4>
+                                        <h4 class="icon-title">Location</h4>
                                     </div>
                                     <div class="icon-box-content">
                                         <p class="mb-1">
-                                            Scotland,
-                                            <br>  Falkirk
+                                            Country:
+                                             <span class="color-a">Scotland</span>
+                                            <br>
                                         </p>
+                                        <p class="mb-1">
+                                            City:
+                                        <span class="color-a">Falkirk</span>
                                     </div>
                                 </div>
                             </div>
@@ -88,39 +118,17 @@
                                 <div class="icon-box-icon">
                                     <span class="bi bi-share"></span>
                                 </div>
-                                <div class="icon-box-content table-cell">
-                                    <div class="icon-box-title">
-                                        <h4 class="icon-title">Social networks</h4>
-                                    </div>
-                                    <div class="icon-box-content">
-                                        <div class="socials-footer">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="link-one" href="#">
-                                                        <i aria-hidden="true" class="bi bi-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="link-one" href="#">
-                                                        <i aria-hidden="true" class="bi bi-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="link-one" href="#">
-                                                        <i aria-hidden="true" class="bi bi-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="link-one" href="#">
-                                                        <i aria-hidden="true" class="bi bi-linkedin"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>

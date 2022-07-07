@@ -15,23 +15,23 @@ Login Page
         </div>
       </div>
     </section><!-- End Intro Single-->
+
 <body class="text-center">
 <div class="container col-md-3 ">
-    <form class="form-register" method="POST" style="color:white">
+    <h1>Please Login</h1>
+    <form class="form-register" method="POST" style="color:#6c757d">
         <!-- this provides security against cross site request forgery -->
         {{ form.hidden_tag() }}
-        <h1>Please Login</h1>
         {{ form.username.label() }}
         {{ form.username(class="form-control", placeholder="Enter Username") }}
         {{ form.password.label() }}
         {{ form.password(class="form-control", placeholder="Enter Password") }}
         <br>
-        {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+        {{ form.submit(class="btn-sm btn btn-a") }}
         <br>
-        <div class="checkbox mb-3">
-            <h6> Need a new account?</h6>
+<br>
+            <p> Need a new account?</p>
             <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
-        </div>
     </form>
 </div>
 </body>

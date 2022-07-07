@@ -15,12 +15,14 @@ class RegisterForm(FlaskForm):
     def validate_username(self, username_for_checking):
         user = User.query.filter_by(username=username_for_checking.data).first()
         if user:
+            print("kappa1")
             raise ValidationError("This username is not available, please try choosing a different username")
 
     # This method verifies if the given email address already exists in the database
     def validate_email_address(self, email_for_checking):
         user = User.query.filter_by(email_address=email_for_checking.data).first()
         if user:
+            print("kappa12")
             raise ValidationError("This email address is not available, please try choosing a different email address")
 
     """Second Level of validation against the form requirements"""
