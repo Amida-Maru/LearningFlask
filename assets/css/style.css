@@ -1,4 +1,9 @@
-/**Main CSS style used in template_inheritance for esports pages*/
+/**
+* Template Name: EstateAgency - v4.7.0
+* Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 /*--------------------------------------------------------------
 # General
@@ -6,7 +11,6 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #555555;
-  background-color: #;
 }
 
 h1,
@@ -24,7 +28,7 @@ a {
   transition: all 0.5s ease;
 }
 a:hover {
-  color: #fff;
+  color: #2eca6a;
   text-decoration: none;
 }
 
@@ -108,7 +112,7 @@ a:hover {
 }
 
 .color-b {
-  color: #fff;
+  color: #2eca6a;
 }
 
 .color-d {
@@ -143,7 +147,7 @@ a:hover {
   bottom: -1px;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #2eca6a;
   z-index: 2;
 }
 
@@ -321,7 +325,7 @@ a:hover {
   position: absolute;
   width: 70px;
   height: 4px;
-  background-color: #FFD700;
+  background-color: #2eca6a;
   bottom: 20px;
   left: 0;
 }
@@ -552,7 +556,7 @@ a:hover {
 --------------------------------------------------------------*/
 .navbar-default {
   transition: all 0.5s ease-in-out;
-  background-color: #FFD700;
+  background-color: #ffffff;
   padding-top: 28px;
   padding-bottom: 28px;
   -webkit-backface-visibility: hidden;
@@ -621,7 +625,7 @@ a:hover {
   transform: scaleX(1);
 }
 .navbar-default.navbar-trans .nav-link:before {
-  background-color: #fff;
+  background-color: #2eca6a;
 }
 .navbar-default.navbar-trans .nav-link:hover {
   color: #000000;
@@ -671,12 +675,11 @@ a:hover {
 }
 @media (min-width: 768px) {
   .navbar-default .dropdown .dropdown-menu {
-    border-top: 4px solid #A18f5c;
+    border-top: 4px solid #2eca6a;
     border-left: 0;
     display: block;
     position: absolute;
     box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(20, 19, 18, 0.1);
-       text-align: center;
   }
 }
 .navbar-default .dropdown .dropdown-menu .dropdown-item {
@@ -684,28 +687,22 @@ a:hover {
   transition: all 500ms ease;
   font-weight: 600;
   min-width: 220px;
-     text-align: center;
 }
 .navbar-default .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #ffffff;
-  color: #c7a904;
+  color: #2eca6a;
   transition: all 500ms ease;
-     text-align: center;
 }
 .navbar-default .dropdown .dropdown-menu .dropdown-item.active {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #2eca6a;
-     text-align: center;
 }
 .navbar-default .dropdown:hover .dropdown-menu {
   transform: translate3d(0px, 0px, 0px);
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=1);
-     text-align: center;
-
 }
-
 
 /*------/ Hamburger Navbar /------*/
 .navbar-toggler {
@@ -1004,7 +1001,7 @@ a:hover {
   padding: 1rem 0 1rem 2rem;
 }
 .intro-single .title-single-box {
-  border-left: 3px solid #FFD700;
+  border-left: 3px solid #2eca6a;
 }
 .intro-single .title-single-box .title-single {
   font-weight: 600;
@@ -1629,7 +1626,6 @@ a:hover {
   width: 300px;
   font-weight: 700;
   text-align: right;
-
 }
 
 .about-img-box {
@@ -1648,12 +1644,11 @@ a:hover {
 }
 
 .sinse-box {
-  background-color: #FFD700;
+  background-color: #2eca6a;
   padding: 1rem 2rem;
   position: absolute;
   left: 15px;
   bottom: 10px;
-  opacity: 85%
 }
 @media (min-width: 576px) {
   .sinse-box {
@@ -1768,6 +1763,128 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.form-as #sendmessage {
+  color: #2eca6a;
+  border: 1px solid #26a356;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.form-as #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.form-as #sendmessage.show, .form-as #errormessage.show, .form-as .show {
+  display: block;
+}
+.form-as .validation {
+  color: red;
+  display: none;
+  margin: 4px 0 20px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+.form-as label {
+  color: #000000;
+  position: relative;
+}
+.form-as select.form-control-lg:not([size]):not([multiple]) {
+  height: 3.5rem;
+}
+.form-as .form-control {
+  border-radius: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.form-as .form-control.form-control-a {
+  height: 3.5rem;
+}
+.form-as .form-control:focus {
+  box-shadow: none;
+  border-color: #2eca6a;
+}
+
+.php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.php-email-form label {
+  color: #000000;
+  position: relative;
+}
+.php-email-form select.form-control-lg:not([size]):not([multiple]) {
+  height: 3.5rem;
+}
+.php-email-form .form-control {
+  border-radius: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.php-email-form .form-control.form-control-a {
+  height: 3.5rem;
+}
+.php-email-form .form-control:focus {
+  box-shadow: none;
+  border-color: #2eca6a;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .section-footer {
@@ -1791,7 +1908,6 @@ footer {
   background: #f3f3f3;
   text-align: center;
   padding: 30px 0;
-
 }
 footer .copyright-footer {
   border-top: 1px solid #ddd;
@@ -1799,97 +1915,4 @@ footer .copyright-footer {
 }
 footer .credits {
   font-size: 14px;
-}
-
-
-/* Styling for dark/bright theme button*/
-
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-* {
-	box-sizing: border-box;
-}
-
-
-body.dark {
-	background: #2b2b2b;
-
-}
-
-.checkbox {
-	opacity: 0;
-
-}
-
-.label {
-	background-color: #111;
-	border-radius: 50px;
-	height: 20px;
-	width: 44px;
-	margin-left: -18px;
-	transform: scale(1.5);
-}
-
-.label .ball {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 1.5px;
-	left: 1px;
-	height: 16px;
-	width: 18px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .ball {
-	transform: translateX(24px);
-	background-color: #3A3B3C;
-}
-
-
-
-
-/* Styling for font sizer*/
-
-.control{
-    float: right;
-    padding: 2px;
-    width: 25px;
-    background: #333;
-    position: absolute;
-    margin: 8px 0 0 440px;
-    text-align: center;
-    transition: 0.25s ease-in-out;
-}
-.control a{
-    font-size: 24px;
-    color: #ffd700;
-
-    font-weight: bold;
-    padding: 5px;
-}
-.control a:hover{
-    color: #ffd700;
-    background: #ff0000;
-    transition: 0.25s ease-in-out;
-}
-a.active{
-
-    color: #ffd700;
-}
-#small {
-    font-size: 16px;
-
-}
-#medium {
-    font-size: 20px;
-
-}
-#large {
-    font-size: 24px;
-
-}
-#max {
-    font-size: 28px;
-
 }
