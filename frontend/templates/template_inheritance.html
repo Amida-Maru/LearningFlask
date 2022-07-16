@@ -16,83 +16,88 @@
 </head>
 
 <!-- ======= Header/Navbar ======= -->
-  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+<nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <a class="navbar-brand text-brand" href="/">Esports<span class="color-b">Hub</span></a>
+        <button aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+                data-bs-target="#navbarDefault" data-bs-toggle="collapse" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a class="navbar-brand text-brand" href="/">Esports<span class="color-b">Hub</span></a>
 
-      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-        <ul class="navbar-nav">
+        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+            <ul class="navbar-nav">
 
-          <li class="nav-item">
-            <a class="nav-link " href="{{ url_for('home_page') }}">Home</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{ url_for('home_page') }}">Home</a>
+                </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{{ url_for('about_game') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Game</a>
-          <div class="dropdown-menu">
-              <a class="dropdown-item " href="{{ url_for('game_glossary') }}">Game Glossary</a>
-          </div>
-          </li>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown" href="" id="navbarDropdown" role="button">About Game</a>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item " href="{{ url_for('about_game') }}">Game Fundamentals</a>
+                        <a class="dropdown-item " href="{{ url_for('game_glossary') }}">Game Glossary</a>
+                    </div>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{{ url_for('about_esports') }}" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Esports</a>
-          <div class="dropdown-menu">
-              <a class="dropdown-item " href="{{ url_for('esports_glossary') }}">Esports Glossary</a>
-          </div>
-          </li>
+                </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{{ url_for('useful_websites') }}" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Useful Websites</a>
-          <div class="dropdown-menu">
-              <a class="dropdown-item " href="{{ url_for('lolfandom') }}">lol.fandom.com</a>
-              <a class="dropdown-item " href="{{ url_for('lolesports') }}">lolesports.com</a>
-               <a class="dropdown-item " href="{{ url_for('lolpros') }}">lolpros.gg</a>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown" href="" id="navbarDropdown1" role="button">About
+                        Esports</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item " href="{{ url_for('about_esports') }}">Esports Fundamentals</a>
+                        <a class="dropdown-item " href="{{ url_for('esports_glossary') }}">Esports Glossary</a>
+                    </div>
+                </li>
 
-          </div>
-          </li>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown" href="" id="navbarDropdown2" role="button">Useful
+                        Websites</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item " href="{{ url_for('useful_websites') }}">Websites Fundamentals</a>
+                        <a class="dropdown-item " href="{{ url_for('lolfandom') }}">lol.fandom.com</a>
+                        <a class="dropdown-item " href="{{ url_for('lolesports') }}">lolesports.com</a>
+                        <a class="dropdown-item " href="{{ url_for('lolpros') }}">lolpros.gg</a>
 
-          <li class="nav-item">
-            <a class="nav-link " href="{{ url_for('account_page') }}">Account</a>
-          </li>
+                    </div>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link " href="{{ url_for('contact_page') }}">Contact</a>
-          </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{ url_for('account_page') }}">Account</a>
+                </li>
 
-
-            <li class="nav-item dropdown">
-                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                   data-bs-toggle="dropdown" href="" id="navbarDropdown3" role="button">Accessibility Features</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item"> <input class="checkbox" id="chk" type="checkbox">
-                        <label class="label" for="chk">
-                            <div class="ball"></div>
-                        </label> </a>
-                    <a class="dropdown-item"> <a href="" id="small">A</a>
-                        <a class="active" href="#" id="medium">A</a>
-                        <a href="#" id="large">A</a>
-                        <a href="#" id="max">A</a>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{ url_for('contact_page') }}">Contact</a>
+                </li>
 
 
-                </div>
-          </li>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown" href="" id="navbarDropdown3" role="button">Accessibility Features</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item"> <input class="checkbox" id="chk" type="checkbox">
+                            <label class="label" for="chk">
+                                <div class="ball"></div>
+                            </label> </a>
+                        <a class="dropdown-item"> <a href="" id="small">A</a>
+                            <a class="active" href="#" id="medium">A</a>
+                            <a href="#" id="large">A</a>
+                            <a href="#" id="max">A</a>
+                        </a>
 
 
+                    </div>
+                </li>
 
 
-
-
-        </ul>
-      </div>
+            </ul>
+        </div>
     </div>
-  </nav><!-- End Header/Navbar -->
-
+</nav><!-- End Header/Navbar -->
 
 
 <!-- ================================
@@ -101,11 +106,7 @@
 
 <section class="intro-single">
 
-    </section><!-- End Intro Single-->
-
-
-
-
+</section><!-- End Intro Single-->
 
 
 <!-- Custom content for pages -->
@@ -115,9 +116,12 @@
     Copyright &copy; 2022 League of Legends - Esports Hub
 </footer>
 
-  <!--JavaScript files-->
+<!--JavaScript files accessibility features-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="/static/js/template_inheritance/accessability_features.js"></script>
+
+<!--JavaScript Bootstrap collapsible menu for mobile devices-->
+<script src="/static/js/template_inheritance/bootstrap.bundle.js"></script>
 
 
 </body>

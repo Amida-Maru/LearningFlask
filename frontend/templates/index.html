@@ -13,6 +13,9 @@
     <link href="/static/fav_icon.png" rel="shortcut icon" type="image/x-icon">
     <!-- styled CSS -->
     <link href="/static/css/home_page/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+
+
 </head>
 
 <body>
@@ -30,17 +33,8 @@
 
   <!-- snap to scroll-->
 
- <div class="container1">
-     <section>
-         <h1>Page one</h1>
-     </section>
-     <section>
-         <h1>Page two</h1>
-     </section>
-     <section>
-         <h1>Page three</h1>
-     </section>
- </div>
+
+
 
 
  <!-- logo-->
@@ -53,11 +47,12 @@
 <section class="screen1">
 <div class="container-text1">
     <div class="page-title home text-center">
-    <h1>Esports in League of Legends</h1>
-
-    <p>The goal of this website is to present fundamental information
+    <h1>ESPORTS IN LEAGUE OF LEGENDS</h1>
+        <h3>The goal of this website is to present fundamental information
         about League of Legends and its esports ecosystem
-        in an accessible and straightforward way. Therefore, even if you have never played the game
+        in an accessible and straightforward way.</h3>
+
+    <p>Therefore, even if you have never played the game
         and have not participated in any esports events yet,
         do not worry as the "ABOUT GAME" and "ABOUT ESPORTS" sections have you covered!
         Did you know that the content of this website has been designed with complete beginners in mind?
@@ -93,6 +88,9 @@
             </div>
             <a class="hex-content" href="{{ url_for('about_game') }}">
                                             <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="bi bi-star-fill"></i>
+                                                </span>
                                                 <span class="title">About Game</span>
                                             </span>
                 <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
@@ -115,6 +113,9 @@
             </div>
             <a class="hex-content" href="{{ url_for('about_esports') }}">
                                             <span class="hex-content-inner">
+                                                 <span class="icon">
+                                                    <i class="bi bi-fire"></i>
+                                                </span>
                                                 <span class="title">About Esports </span>
                                             </span>
                 <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
@@ -138,6 +139,9 @@
             </div>
             <a class="hex-content" href="{{ url_for('useful_websites') }}">
                                             <span class="hex-content-inner">
+                                                 <span class="icon">
+                                                    <i class="bi bi-bookmark-heart-fill"></i>
+                                                </span>
                                                 <span class="title">Useful Websites </span>
                                             </span>
                 <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
@@ -153,7 +157,8 @@
         </div>
     </div>
 </div>
-    </div>
+
+
 
 <!-- end of first header -->
 
@@ -164,10 +169,11 @@
 <section class="screen2">
 <div class="container-text2">
                         <div class="page-title home text-center">
-<h1>Account and Contact</h1>
+<h1>ACCOUNT AND CONTACT</h1>
+                            <h3>The website has been designed with the user-centred approach. That means that the development team
+                              works closely with the users to make the website even more user-friendly and accessible.</h3>
 
-                            <p>The website has been designed with the user-centred approach. That means that the development team
-                              works closely with the users to make the website even more user-friendly and accessible. Did you know that you can
+                            <p>Did you know that you can
                                 create your own notes about the game, esports, etc. as part of the website functionality? Just check the "ACCOUNT" section for details.
                                 On top of that the notes are colour-coded and editable so you can update them as your knowledge improves...
                                  You are also welcome to contact the development team under the "CONTACT" section were you can send us an email for example how
@@ -190,6 +196,9 @@
                             </div>
                             <a class="hex-content" href="{{ url_for('account_page') }}">
                                             <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="bi bi-file-person"></i>
+                                                </span>
                                                 <span class="title">Account</span>
                                             </span>
                                 <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
@@ -212,6 +221,9 @@
                             </div>
                             <a class="hex-content" href="{{ url_for('contact_page') }}">
                                             <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="bi bi-envelope-plus-fill"></i>
+                                                </span>
                                                 <span class="title">Contact</span>
                                             </span>
                                 <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
@@ -226,6 +238,7 @@
     Copyright &copy; 2022 League of Legends - Esports Hub
 </footer>
     </section>
+
 
 </body>
 </html>
