@@ -4,22 +4,13 @@ Login Page
 {% endblock %}
 {% block content %}
 
-<section class="intro-single">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-8">
+
+<body class="text-center mt-5">
 
 
-
-          </div>
-        </div>
-      </div>
-    </section><!-- End Intro Single-->
-
-<body class="text-center">
 <div class="container col-md-3 ">
-    <h1>Please Login</h1>
-    <form class="form-register" method="POST" style="color:#6c757d">
+    <h1>Login</h1>
+    <form class="form-control form-control-lg form-control-a" method="POST">
         <!-- this provides security against cross site request forgery -->
         {{ form.hidden_tag() }}
         {{ form.username.label() }}

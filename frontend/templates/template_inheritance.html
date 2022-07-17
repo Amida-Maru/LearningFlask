@@ -9,16 +9,19 @@
     <!-- mobile viwport meta -->
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <!-- fevicon -->
-    <link href="/static/fav_icon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="static/img/fav_icon.png" rel="shortcut icon" type="image/x-icon">
     <!-- styled CSS -->
     <link href="static/css/esports_pages/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/esports_pages/style.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <!-- ======= Header/Navbar ======= -->
 <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-        <button aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+        <button aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler collapsed"
                 data-bs-target="#navbarDefault" data-bs-toggle="collapse" type="button">
             <span></span>
             <span></span>
@@ -37,7 +40,7 @@
                     <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
                        data-bs-toggle="dropdown" href="" id="navbarDropdown" role="button">About Game</a>
                     <div class="dropdown-menu">
-                            <a class="dropdown-item " href="{{ url_for('about_game') }}">Game Fundamentals</a>
+                        <a class="dropdown-item " href="{{ url_for('about_game') }}">Game Fundamentals</a>
                         <a class="dropdown-item " href="{{ url_for('game_glossary') }}">Game Glossary</a>
                     </div>
 
@@ -66,14 +69,6 @@
                     </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ url_for('account_page') }}">Account</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ url_for('contact_page') }}">Contact</a>
-                </li>
-
 
                 <li class="nav-item dropdown">
                     <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
@@ -92,6 +87,33 @@
 
                     </div>
                 </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link " href="{{ url_for('contact_page') }}">Contact</a>
+                </li>
+
+                {% if current_user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                       href="" role="button" style="color: #fff">Hi,
+                        {{current_user.username[0]|upper}}{{current_user.username[1:] }}</a>
+                    <div class="dropdown-menu">
+                        <a class="nav-link" href="{{ url_for('account_page') }}">Your Personal Notes</a>
+                        <a class="nav-link" href="{{ url_for('logout_page') }}">Logout</a>
+                    </div>
+                </li>
+
+                {% else %}
+
+                <li class="nav-item">
+                    <a class="nav-link " href="{{ url_for('account_page') }}" id="sanity">Account</a>
+                </li>
+
+                {% endif %}
+
+
+                <!-- menu on the right -->
 
 
             </ul>

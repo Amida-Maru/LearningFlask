@@ -1,17 +1,37 @@
 {% extends 'template_inheritance.html' %}
 
 {% block content %}
+
+
+
+<section class="intro-single">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-lg-8 ">
+            <div class="title-single-box ">
+              <h1 class="title-single">Update Your Notes</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+<div class="container mt-3">
 <form action="{{update_note}}" method="POST">
     <h3>Update Note</h3>
-    <div class="form-group">
-      <label for="recipient-name" class="col-form-label">Title:</label>
-      <input type="text" class="form-control" name="title" id="recipient-name" value="{{nu.title}}">
+    <div class="form-group col-sm-6">
+      <label  class="col-form-label">Title:</label>
+      <input type="text" class="form-control form-control-lg form-control-a" name="title"  value="{{nu.title}}">
     </div>
     <div class="form-group">
-      <label for="message-text" class="col-form-label">Note Text:</label>
-      <textarea class="form-control" id="message-text" name="note">{{nu.text}}</textarea>
+      <label  class="col-form-label">Note Text:</label>
+      <textarea class="form-control form-control-lg form-control-a"  required rows="6" name="note">{{nu.text}} </textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Update</button>
+    <div class="col-md-12 text-center mt-4">
+    <button type="submit" class="btn btn-a">Update</button>
+    </div>
 </form>
+</div>
+
     
 {% endblock content %}

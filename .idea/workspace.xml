@@ -3,16 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="50a31307-520c-4ca2-8871-407ef5846534" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/about_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/about_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database_users.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database_users.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/templates/template_inheritance.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/template_inheritance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/about-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/agent-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/agent-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/agent-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/agent-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/author-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/wrong_url.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/wrong_url.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/esports_pages/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/esports_pages/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/home_page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home_page/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,22 +25,74 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/template_inheritance.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/wrong_url.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="22" column="78" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="78" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/templates/template_inheritance.html">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/account.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-              <folding>
-                <element signature="e#4325#4331#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -54,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Item</find>
       <find>note</find>
       <find>button</find>
       <find>section-about</find>
@@ -84,6 +137,7 @@
       <find>navbar</find>
       <find>Navbar</find>
       <find>data-</find>
+      <find>hexagon</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/js/theme_checkbox.js" />
         <option value="$PROJECT_DIR$/static/js/font_size_changer.js" />
         <option value="$PROJECT_DIR$/static/js/accessbility_features.js" />
         <option value="$PROJECT_DIR$/static/css/landing_page/style.css" />
@@ -102,7 +155,6 @@
         <option value="$PROJECT_DIR$/static/css/colors/red.css" />
         <option value="$PROJECT_DIR$/static/css/colors/yellow.css" />
         <option value="$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/frontend/templates/update.html" />
         <option value="$PROJECT_DIR$/backend/db_modeles.py" />
         <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/static/js/accessability_features.js" />
@@ -124,7 +176,6 @@
         <option value="$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" />
         <option value="$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap.rtl.css" />
         <option value="$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" />
         <option value="$PROJECT_DIR$/frontend/templates/useful_websites.html" />
         <option value="$PROJECT_DIR$/frontend/templates/esports_glossary.html" />
         <option value="$PROJECT_DIR$/frontend/templates/lolpros.html" />
@@ -133,24 +184,27 @@
         <option value="$PROJECT_DIR$/frontend/templates/about_esports.html" />
         <option value="$PROJECT_DIR$/frontend/templates/game_glossary.html" />
         <option value="$PROJECT_DIR$/backend/forms.py" />
-        <option value="$PROJECT_DIR$/frontend/templates/register.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/login.html" />
-        <option value="$PROJECT_DIR$/static/css/esports_pages/style.css" />
-        <option value="$PROJECT_DIR$/frontend/templates/contact.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/account.html" />
-        <option value="$PROJECT_DIR$/static/css/home_page/style.css" />
-        <option value="$PROJECT_DIR$/frontend/templates/index.html" />
         <option value="$PROJECT_DIR$/frontend/templates/about_game.html" />
         <option value="$PROJECT_DIR$/static/js/template_inheritance/bootstrap.bundle.min.js" />
+        <option value="$PROJECT_DIR$/static/css/esports_pages/style.css" />
+        <option value="$PROJECT_DIR$/frontend/templates/login.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/register.html" />
+        <option value="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" />
+        <option value="$PROJECT_DIR$/frontend/templates/wrong_url.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/home_page/style.css" />
+        <option value="$PROJECT_DIR$/frontend/templates/contact.html" />
         <option value="$PROJECT_DIR$/frontend/templates/template_inheritance.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/update.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/account.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2062" />
-    <option name="y" value="139" />
-    <option name="width" value="3006" />
-    <option name="height" value="1944" />
+    <option name="x" value="-565" />
+    <option name="y" value="197" />
+    <option name="width" value="2505" />
+    <option name="height" value="1620" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -159,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,21 +285,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PythonUniDevelopment\honours_project\static\js\home_page" />
-      <recent name="C:\PythonUniDevelopment\honours_project\static\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PythonUniDevelopment\honours_project\static\css\esports_pages" />
       <recent name="C:\PythonUniDevelopment\honours_project\static\js\home_page" />
       <recent name="C:\PythonUniDevelopment\honours_project\static\css\home_page" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PythonUniDevelopment\honours_project\static\js\home_page" />
+      <recent name="C:\PythonUniDevelopment\honours_project\static\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,10 +327,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-7" width="2575" height="1415" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11623325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19497687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -315,7 +369,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/js/bootstrap.bundle.js" />
     <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/js/bootstrap.bundle.min.js" />
     <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/php-email-form/validate.js" />
     <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap-icons/index.html" />
@@ -332,12 +385,6 @@
     <entry file="file://$PROJECT_DIR$/static/js/esports_pages/main.js" />
     <entry file="file://$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css.map" />
     <entry file="file://$PROJECT_DIR$/static/style.css" />
-    <entry file="file://$PROJECT_DIR$/frontend/templates/update.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/wrong_url.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/fav_icon.png" />
     <entry file="file://$PROJECT_DIR$/static/js/home_page/isotope.pkgd.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -393,13 +440,6 @@
     <entry file="file://$PROJECT_DIR$/static/img/phantom.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="1862" column="39" selection-start-line="1862" selection-start-column="37" selection-end-line="1862" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/templates/useful_websites.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -442,37 +482,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="38" column="93" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/phantom/phantom/themes/phantom/dark/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -483,48 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="1788" lean-forward="true" selection-start-line="1788" selection-end-line="1788" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/template_inheritance/bootstrap.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="4129" column="28" selection-start-line="4129" selection-start-column="28" selection-end-line="4129" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
@@ -535,20 +510,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/db_modeles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325">
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1079">
+          <caret line="1862" column="39" selection-start-line="1862" selection-start-column="37" selection-end-line="1862" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/home_page/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="386" column="3" selection-start-line="386" selection-start-column="3" selection-end-line="386" selection-end-column="3" />
+        <state relative-caret-position="1047">
+          <caret line="389" column="3" lean-forward="true" selection-start-line="389" selection-start-column="3" selection-end-line="389" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#10339#10345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52103">
+          <caret line="67" column="52" selection-start-line="67" selection-end-line="67" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/wrong_url.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="78" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="78" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/templates/template_inheritance.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        <state relative-caret-position="480">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
-            <element signature="e#4325#4331#0" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

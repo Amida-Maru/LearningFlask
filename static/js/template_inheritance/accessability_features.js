@@ -6,7 +6,10 @@ $(document).ready(function(){
         $('h2').animate({ "font-size" : "16px" });
         $('h3').animate({ "font-size" : "24px" });
         $('p').animate({ "font-size" : "12px" });
-        $('footer').animate({ "font-size" : "12px" });
+        $('.col-form-label').animate({ "font-size" : "12px" });
+        $('.form-control').animate({ "font-size" : "12px" });
+
+
     });
 
     $('#medium').click(function(e){
@@ -15,9 +18,11 @@ $(document).ready(function(){
         $('h2').animate({ "font-size" : "20px" });
         $('h3').animate({ "font-size" : "35px" });
         $('p').animate({ "font-size" : "16px" });
+        $('.col-form-label').animate({ "font-size" : "16px" });
+        $('.form-control').animate({ "font-size" : "16px" });
 
 
-        $('footer').animate({ "font-size" : "16px" });
+
     });
 
     $('#large').click(function(e){
@@ -26,7 +31,9 @@ $(document).ready(function(){
         $('h2').animate({ "font-size" : "34px" });
         $('h3').animate({ "font-size" : "38px" });
         $('p').animate({ "font-size" : "22px" });
-        $('footer').animate({ "font-size" : "22px" });
+        $('.col-form-label').animate({ "font-size" : "22px" });
+        $('.form-control').animate({ "font-size" : "22px" });
+
     });
 
     $('#max').click(function(e){
@@ -35,7 +42,8 @@ $(document).ready(function(){
         $('h2').animate({ "font-size" : "38px" });
         $('h3').animate({ "font-size" : "40px" });
         $('p').animate({ "font-size" : "26px" , "line-height" : "26px"});
-        $('footer').animate({ "font-size" : "26px" });
+        $('.col-form-label').animate({ "font-size" : "26px" });
+        $('.form-control').animate({ "font-size" : "26px" });
     });
 
     $("a").click(function(){
@@ -51,6 +59,7 @@ const chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark-theme');
+
 });
 
 

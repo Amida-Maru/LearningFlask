@@ -1,24 +1,44 @@
 {% extends 'template_inheritance.html' %}
 {% block content %}
 
+<!-- Start Intro Single-->
 <section class="intro-single">
-      <div class="container">
+    <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-8">
-            <div class="title-single-box">
-              <h1 class="title-single">Create Your Esports Notes</h1>
+            <div class="col-sm-12">
+                <div class="title-single-box">
+                    <h1 class="title-single">Account</h1>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section><!-- End Intro Single-->
+    </div>
+</section>
+<!-- End Intro Single-->
 
-<div class="container mt-3">
+
+<!-- Start Note Title Field-->
+<div class="container">
+    <h2>Contact Form</h2>
     <form action="{{account_page}}" method="post">
+        <div class="form-group row text-center">
+            <div class="col-sm-6 mb-3 ">
+                <input class="form-control form-control-lg form-control-a" name="title" placeholder="Title of Your Note"
+                       required type="text">
+            </div>
+        </div>
+
+        <!-- End Note Title Field-->
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <textarea class="form-control form-control-lg form-control-a" cols="45"
+                          name="note"
+                          placeholder="Text of Your Note" required rows="6"></textarea>
+            </div>
+        </div>
+
 
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label" for="staticEmail">Note Category</label>
-            <div class="col-sm-10">
+            <div class="col-sm-12  mt-3">
                 <select class="Choose Category" name="category">
                     <option value="Esports-Related">Esports-Related</option>
                     <option value="Game-Related">Game-Related</option>
@@ -27,66 +47,58 @@
             </div>
         </div>
 
-
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label" for="staticEmail">Note Title</label>
-            <div class="col-sm-10">
-                <input class="form-control" id="formGroupExampleInput" name="title" placeholder="Enter Note Title"
-                       type="text">
-            </div>
+        <div class="col-md-12 text-center mt-3 mb-3">
+            <button class="btn btn-a" type="submit">Add Note</button>
         </div>
-
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label" for="note-desc">Note Description</label>
-            <div class="col-sm-10">
-                <textarea class="form-control" name="note" placeholder="Enter Note Body" rows="4"></textarea>
-            </div>
-        </div>
-        <button class="btn btn-dark" type="submit">Add Note</button>
     </form>
 </div>
 
-<hr>
-
-{% if user.notes | length ==0 %}
-<div class="alert alert-danger" role="alert">
-    There is no note, ADD your first note now!!
+<div class="col-md-12 mt-5">
+    <hr>
 </div>
-{% else %}
-{% for note in user.notes %}
-{% if note.category == 'Esports-Related' %}
 
-<div class="container bootstrap snippets bootdeys">
-    <div class="row">
-        <div class="col-md-4 col-sm-6 content-card">
-            <div class="card-big-shadow">
-                <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
-                    <div class="content">
-                        <h6 class="category">{{note.category}}</h6>
-                        <h4 class="title"><a href="#">{{note.title}}</a></h4>
-                        <p class="description">{{note.text}}</p>
-                        <p class="description">{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
-                        <a href="{{url_for('delete_note', id = note.id)}}" type="button"
-                           class="btn btn-success btn-sm mx-2">Delete</button></a>
-                        <a href="{{url_for('update_note', id = note.id)}}" type="button"
-                           class="btn btn-danger btn-sm mx-2">Update</button></a>
-                    </div>
-                </div> <!-- end card -->
+<div class="content-box-lg">
+    <div class="container">
+        <div class="row">
+
+            {% if user.notes | length ==0 %}
+            <div class="alert alert-danger" role="alert">
+                There is no note, ADD your first note now!!
             </div>
-        </div>
-    </div>
+            {% else %}
+            {% for note in user.notes %}
+            {% if note.category == 'Esports-Related' %}
 
-    {% endif%}
 
-    {% if note.category == 'Game-Related' %}
-            <div class="col-md-4 col-sm-6 content-card">
+            <div class="col-lg-4 col-md-6 col-sm-12 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">{{note.category}}</h6>
+                            <h4 class="title"><a href="#">{{note.title}}</a></h4>
+                            <p class="description">{{note.text}}</p>
+                            <p class="description">Created:{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
+                            <a href="{{url_for('delete_note', id = note.id)}}" type="button"
+                               class="btn btn-danger btn-sm mx-2">Delete</button></a>
+                            <a href="{{url_for('update_note', id = note.id)}}" type="button"
+                               class="btn btn-success btn-sm mx-2">Update</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end card -->
+
+
+            {% endif%}
+
+            {% if note.category == 'Game-Related' %}
+            <div class="col-lg-4 col-md-6 col-sm-12 content-card">
                 <div class="card-big-shadow">
                     <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
                         <div class="content">
                             <h6 class="category">{{note.category}}</h6>
                             <h4 class="title"><a href="#">{{note.title}}</a></h4>
                             <p class="description">{{note.text}}</p>
-                            <p class="description">{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
+                            <p class="description">Created:{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
                             <a href="{{url_for('delete_note', id = note.id)}}" type="button"
                                class="btn btn-success btn-sm mx-2">Delete</button></a>
                             <a href="{{url_for('update_note', id = note.id)}}" type="button"
@@ -96,25 +108,24 @@
                 </div>
             </div>
 
-        {% endif%}
-        {% if note.category == 'Other' %}
-                <div class="col-md-4 col-sm-6 content-card">
-                    <div class="card-big-shadow">
-                        <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
-                            <div class="content">
-                                <h6 class="category">{{note.category}}</h6>
-                                <h4 class="title"><a href="#">{{note.title}}</a></h4>
-                                <p class="description">{{note.text}}</p>
-                                <p class="description">{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
-                                <a href="{{url_for('delete_note', id = note.id)}}" type="button"
-                                   class="btn btn-success btn-sm mx-2">Delete</button></a>
-                                <a href="{{url_for('update_note', id = note.id)}}" type="button"
-                                   class="btn btn-danger btn-sm mx-2">Update</button></a>
-                            </div>
-                        </div> <!-- end card -->
-                    </div>
+            {% endif%}
+            {% if note.category == 'Other' %}
+            <div class="col-lg-4 col-md-6 col-sm-12 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">{{note.category}}</h6>
+                            <h4 class="title"><a href="#">{{note.title}}</a></h4>
+                            <p class="description">{{note.text}}</p>
+                            <p class="description">Created:{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
+                            <a href="{{url_for('delete_note', id = note.id)}}" type="button"
+                               class="btn btn-success btn-sm mx-2">Delete</button></a>
+                            <a href="{{url_for('update_note', id = note.id)}}" type="button"
+                               class="btn btn-danger btn-sm mx-2">Update</button></a>
+                        </div>
+                    </div> <!-- end card -->
                 </div>
-
+            </div>
 
 
             {% endif%}
@@ -122,10 +133,14 @@
             {% endfor %}
             {% endif %}
 
+        </div>
+    </div>
+</div>
 
+    <style>
+body{
 
-        <style>
-body{margin-top:20px;}
+margin-top:20px;}
 
 .card-big-shadow {
     max-width: 320px;
@@ -154,7 +169,7 @@ body{margin-top:20px;}
     color: #FFFFFF;
 }
 .card.card-just-text .content {
-    padding: 50px 65px;
+    padding: 15px 15px;
     text-align: center;
 }
 .card .content {
@@ -165,8 +180,8 @@ body{margin-top:20px;}
 }
 
 .card .category, .card .label {
-    font-size: 14px;
-    margin-bottom: 0px;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 .card-big-shadow:before {
     background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
@@ -183,9 +198,10 @@ body{margin-top:20px;}
     z-index: 0;
 }
 h4, .h4 {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 600;
     line-height: 1.2em;
+
 }
 h6, .h6 {
     font-size: 0.9em;
@@ -231,35 +247,12 @@ a:hover, a:focus {
     color: #d88715;
 }
 
-.card[data-color="brown"] {
-    background: #d6c1ab;
-}
-.card[data-color="brown"] .description {
-    color: #75442e;
-}
-.card[data-color="brown"] .category {
-    color: #a47e65;
+hr{
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+text-center;
 }
 
-.card[data-color="purple"] {
-    background: #baa9ba;
-}
-.card[data-color="purple"] .description {
-    color: #3a283d;
-}
-.card[data-color="purple"] .category {
-    color: #5a283d;
-}
-
-.card[data-color="orange"] {
-    background: #ff8f5e;
-}
-.card[data-color="orange"] .description {
-    color: #772510;
-}
-.card[data-color="orange"] .category {
-    color: #e95e37;
-}
-
-        </style>
-        {% endblock %}
+    </style>
+    {% endblock %}
