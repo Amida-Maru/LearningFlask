@@ -1657,7 +1657,7 @@ a:hover {
   margin-right: 25px;
 }
 .card-box-d:hover .card-overlay-hover {
-  background-color: #2eca6a;
+  background-color: #FFD700;
   opacity: 0.9;
 }
 .card-box-d:hover .title-d,

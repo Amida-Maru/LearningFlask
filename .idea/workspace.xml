@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="50a31307-520c-4ca2-8871-407ef5846534" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database_users.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database_users.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/about_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/about_game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/esports_pages/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/esports_pages/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/home_page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home_page/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +19,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="240">
+              <caret line="89" column="69" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/home_page/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="315" column="26" selection-start-line="315" selection-start-column="26" selection-end-line="315" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2931">
+              <caret line="1659" column="28" lean-forward="true" selection-start-line="1659" selection-start-column="28" selection-end-line="1659" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/css/home_page/style.css">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/about_game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="315" column="26" selection-start-line="315" selection-start-column="26" selection-end-line="315" selection-end-column="26" />
+            <state relative-caret-position="6120">
+              <caret line="204" column="80" selection-start-line="204" selection-start-column="80" selection-end-line="204" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -46,7 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>button</find>
       <find>section-about</find>
       <find>intro-single</find>
       <find>text</find>
@@ -76,6 +92,7 @@
       <find>data-</find>
       <find>hexagon</find>
       <find>2eca6a</find>
+      <find>card-overlay-hover</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,7 +138,6 @@
         <option value="$PROJECT_DIR$/frontend/templates/about_esports.html" />
         <option value="$PROJECT_DIR$/frontend/templates/game_glossary.html" />
         <option value="$PROJECT_DIR$/backend/forms.py" />
-        <option value="$PROJECT_DIR$/frontend/templates/about_game.html" />
         <option value="$PROJECT_DIR$/static/js/template_inheritance/bootstrap.bundle.min.js" />
         <option value="$PROJECT_DIR$/frontend/templates/login.html" />
         <option value="$PROJECT_DIR$/frontend/templates/register.html" />
@@ -129,18 +145,18 @@
         <option value="$PROJECT_DIR$/frontend/templates/wrong_url.html" />
         <option value="$PROJECT_DIR$/frontend/templates/template_inheritance.html" />
         <option value="$PROJECT_DIR$/frontend/templates/update.html" />
-        <option value="$PROJECT_DIR$/static/css/esports_pages/style.css" />
-        <option value="$PROJECT_DIR$/frontend/templates/contact.html" />
         <option value="$PROJECT_DIR$/backend/routes.py" />
-        <option value="$PROJECT_DIR$/frontend/templates/index.html" />
         <option value="$PROJECT_DIR$/frontend/templates/account.html" />
         <option value="$PROJECT_DIR$/static/css/home_page/style.css" />
+        <option value="$PROJECT_DIR$/frontend/templates/contact.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/esports_pages/style.css" />
+        <option value="$PROJECT_DIR$/frontend/templates/about_game.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2089" />
-    <option name="y" value="177" />
+    <option name="x" value="2520" />
     <option name="width" value="3006" />
     <option name="height" value="1944" />
   </component>
@@ -265,7 +281,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2033" y="118" width="2004" height="1296" extended-state="0" />
+    <frame x="2320" y="0" width="2004" height="1296" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14997458" />
@@ -419,13 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/about_game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="168" column="32" selection-start-line="168" selection-start-column="32" selection-end-line="168" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1079">
@@ -471,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="720" column="18" selection-start-line="720" selection-start-column="18" selection-end-line="720" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/db_modeles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-444">
@@ -516,17 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/templates/template_inheritance.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -544,10 +535,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/frontend/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="696">
+          <caret line="104" column="64" lean-forward="true" selection-start-line="104" selection-start-column="64" selection-end-line="104" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -555,6 +550,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="315" column="26" selection-start-line="315" selection-start-column="26" selection-end-line="315" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2931">
+          <caret line="1659" column="28" lean-forward="true" selection-start-line="1659" selection-start-column="28" selection-end-line="1659" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="89" column="69" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/about_game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6120">
+          <caret line="204" column="80" selection-start-line="204" selection-start-column="80" selection-end-line="204" selection-end-column="80" />
         </state>
       </provider>
     </entry>
