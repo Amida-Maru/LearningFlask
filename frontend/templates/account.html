@@ -16,8 +16,11 @@
 <!-- End Intro Single-->
 
 
+
+
 <!-- Start Note Title Field-->
 <div class="container">
+    <div class="row">
     <h2>Contact Form</h2>
     <form action="{{account_page}}" method="post">
         <div class="form-group row text-center">
@@ -59,7 +62,8 @@
 
 <div class="content-box-lg">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-left:45px">
+
 
             {% if user.notes | length ==0 %}
             <div class="alert alert-danger" role="alert">
@@ -139,8 +143,7 @@
 
     <style>
 body{
-
-margin-top:20px;}
+}
 
 .card-big-shadow {
     max-width: 320px;
@@ -149,6 +152,7 @@ margin-top:20px;}
 
 .coloured-cards .card {
     margin-top: 30px;
+
 }
 
 .card[data-radius="none"] {
@@ -248,11 +252,15 @@ a:hover, a:focus {
 }
 
 hr{
-width: 85%;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
 text-center;
 }
+
+
+
+
 
     </style>
     {% endblock %}

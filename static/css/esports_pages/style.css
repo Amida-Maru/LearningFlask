@@ -717,7 +717,7 @@ a:hover {
 }
 .navbar-default .dropdown .dropdown-menu {
   border-top: 0;
-  border-left: 4px solid #2eca6a;
+  border-left: 4px solid #FFD700;
   border-right: 0;
   border-bottom: 0;
   transform: translate3d(0px, 40px, 0px);
