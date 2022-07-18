@@ -287,7 +287,7 @@ h4, h5, h6 {
 .container-heading-logo {
  display: flex;
  justify-content: center;
- margin-top: -1%;
+ margin-top: 1%;
  margin-bottom: 0%;
 
  }
@@ -612,9 +612,39 @@ footer {
 }
 
 
+.container-text1 {
+ margin-left: 12.5%;
+ margin-right: 12.5%;
+ display: flex;
+ text-align: justify;
+ text-justify: inter-character;
+ margin-top: 12%;
+ margin-bottom: 2%;
+
+
+}
+
+
+.container-text2 {
+ margin-left: 12.5%;
+ margin-right: 12.5%;
+ display: flex;
+ text-align: justify;
+ text-justify: inter-character;
+ margin-top: 7%;
+ margin-bottom: 2%;
+
+}
 
 
 
+.container-heading-logo {
+ display: flex;
+ justify-content: center;
+ margin-top: 10%;
+ margin-bottom: 0%;
+
+ }
 
 }
 
