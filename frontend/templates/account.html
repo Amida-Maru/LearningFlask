@@ -103,9 +103,9 @@
                             <p class="description">{{note.text}}</p>
                             <p class="description">Created:{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
                             <a href="{{url_for('delete_note', id = note.id)}}" type="button"
-                               class="btn btn-success btn-sm mx-2">Delete</button></a>
+                               class="btn btn-danger btn-sm mx-2">Delete</button></a>
                             <a href="{{url_for('update_note', id = note.id)}}" type="button"
-                               class="btn btn-danger btn-sm mx-2">Update</button></a>
+                               class="btn btn-success btn-sm mx-2">Update</button></a>
                         </div>
                     </div> <!-- end card -->
                 </div>
@@ -122,9 +122,9 @@
                             <p class="description">{{note.text}}</p>
                             <p class="description">Created:{{note.time.strftime('%Y-%m-%d %H:%M')}}</p>
                             <a href="{{url_for('delete_note', id = note.id)}}" type="button"
-                               class="btn btn-success btn-sm mx-2">Delete</button></a>
+                               class="btn btn-danger btn-sm mx-2">Delete</button></a>
                             <a href="{{url_for('update_note', id = note.id)}}" type="button"
-                               class="btn btn-danger btn-sm mx-2">Update</button></a>
+                               class="btn btn-success btn-sm mx-2">Update</button></a>
                         </div>
                     </div> <!-- end card -->
                 </div>
