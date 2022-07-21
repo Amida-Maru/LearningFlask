@@ -357,11 +357,13 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #1e2530;
+  color: #FFD700;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 5%;
   text-padding-bottom: 10px;
+
 
   }
 

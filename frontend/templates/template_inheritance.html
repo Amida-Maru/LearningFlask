@@ -17,6 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
+<body>
 <!-- ======= Header/Navbar ======= -->
 <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
@@ -62,9 +63,9 @@
                         Websites</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item " href="{{ url_for('useful_websites') }}">Websites Fundamentals</a>
-                        <a class="dropdown-item " href="{{ url_for('lolfandom') }}">lol.fandom.com</a>
-                        <a class="dropdown-item " href="{{ url_for('lolesports') }}">lolesports.com</a>
                         <a class="dropdown-item " href="{{ url_for('lolpros') }}">lolpros.gg</a>
+                        <a class="dropdown-item " href="{{ url_for('lolesports') }}">lolesports.com</a>
+                        <a class="dropdown-item " href="{{ url_for('lolfandom') }}">lol.fandom.com</a>
 
                     </div>
                 </li>
@@ -122,19 +123,21 @@
 </nav><!-- End Header/Navbar -->
 
 
-<!-- ================================
-      Accessability features
-      ================================= -->
-
+<!-- Margin break -->
 <section class="intro-single">
-
-</section><!-- End Intro Single-->
-
+</section>
+<!-- Margin break-end -->
 
 <!-- Custom content for pages -->
 {% block content %}
+
 {% endblock %}
-<footer class="text-center">
+
+<!-- Margin break -->
+<section class="intro-single">
+</section>
+<!-- Margin break-end -->
+<footer class="">
     Copyright &copy; 2022 League of Legends - Esports Hub
 </footer>
 
@@ -144,7 +147,5 @@
 
 <!--JavaScript Bootstrap collapsible menu for mobile devices-->
 <script src="/static/js/template_inheritance/bootstrap.bundle.js"></script>
-
-
 </body>
 </html>

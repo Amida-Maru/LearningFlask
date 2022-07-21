@@ -3,9 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="50a31307-520c-4ca2-8871-407ef5846534" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database_users.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database_users.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/about_esports.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/about_esports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/about_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/about_game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/esports_glossary.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/esports_glossary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/game_glossary.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/game_glossary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/lolesports.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/lolesports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/lolfandom.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/lolfandom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/lolpros.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/lolpros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/template_inheritance.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/template_inheritance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/useful_websites.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/useful_websites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/wrong_url.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/wrong_url.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/esports_pages/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/esports_pages/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/home_page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home_page/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,52 +31,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/home_page/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="383" column="35" lean-forward="true" selection-start-line="383" selection-end-line="383" selection-end-column="35" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/static/img/about_esports_glossary.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/templates/template_inheritance.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1950">
+              <caret line="65" column="88" selection-start-line="65" selection-start-column="88" selection-end-line="65" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/templates/account.html">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/lolpros.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            <state relative-caret-position="584">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/templates/useful_websites.html">
+        <entry file="file://$PROJECT_DIR$/static/css/home_page/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="300" column="50" lean-forward="true" selection-start-line="300" selection-start-column="50" selection-end-line="300" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="261">
+              <caret line="629" column="25" lean-forward="true" selection-start-line="628" selection-start-column="1" selection-end-line="629" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -77,18 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>intro-single</find>
-      <find>text</find>
-      <find>active</find>
-      <find>sourceMappin</find>
-      <find>sourceMappingURL</find>
-      <find>assets</find>
-      <find>agent-6</find>
-      <find>h3</find>
-      <find>footer</find>
-      <find>dropdow</find>
-      <find>ho</find>
-      <find>a</find>
       <find>scroll</find>
       <find>h1</find>
       <find>p</find>
@@ -105,8 +102,20 @@
       <find>data-</find>
       <find>hexagon</find>
       <find>2eca6a</find>
-      <find>card-overlay-hover</find>
       <find>width</find>
+      <find>card-overlay-hover</find>
+      <find>card overlay hover</find>
+      <find>sinse-box</find>
+      <find>webkit-transition</find>
+      <find>footer</find>
+      <find>cardbox-</find>
+      <find>card-box-d</find>
+      <find>post</find>
+      <find>post-intro</find>
+      <find>list-inline-item</find>
+      <find>mr-2</find>
+      <find>list-inline</find>
+      <find>li</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,36 +153,36 @@
         <option value="$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" />
         <option value="$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap.rtl.css" />
         <option value="$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/static/js/template_inheritance/bootstrap.bundle.min.js" />
+        <option value="$PROJECT_DIR$/frontend/templates/update.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/index.html" />
+        <option value="$PROJECT_DIR$/backend/forms.py" />
+        <option value="$PROJECT_DIR$/backend/routes.py" />
+        <option value="$PROJECT_DIR$/frontend/templates/about_game.html" />
         <option value="$PROJECT_DIR$/frontend/templates/esports_glossary.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/lolpros.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/game_glossary.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/contact.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/register.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/login.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/wrong_url.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/account.html" />
+        <option value="$PROJECT_DIR$/static/css/home_page/style.css" />
+        <option value="$PROJECT_DIR$/frontend/templates/template_inheritance.html" />
         <option value="$PROJECT_DIR$/frontend/templates/lolfandom.html" />
         <option value="$PROJECT_DIR$/frontend/templates/lolesports.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/game_glossary.html" />
-        <option value="$PROJECT_DIR$/static/js/template_inheritance/bootstrap.bundle.min.js" />
-        <option value="$PROJECT_DIR$/frontend/templates/register.html" />
-        <option value="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" />
-        <option value="$PROJECT_DIR$/frontend/templates/wrong_url.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/update.html" />
-        <option value="$PROJECT_DIR$/static/css/esports_pages/style.css" />
-        <option value="$PROJECT_DIR$/frontend/templates/contact.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/index.html" />
-        <option value="$PROJECT_DIR$/static/css/home_page/style.css" />
-        <option value="$PROJECT_DIR$/frontend/templates/about_game.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/useful_websites.html" />
         <option value="$PROJECT_DIR$/frontend/templates/about_esports.html" />
-        <option value="$PROJECT_DIR$/frontend/templates/login.html" />
-        <option value="$PROJECT_DIR$/backend/forms.py" />
-        <option value="$PROJECT_DIR$/frontend/templates/template_inheritance.html" />
-        <option value="$PROJECT_DIR$/backend/routes.py" />
-        <option value="$PROJECT_DIR$/frontend/templates/account.html" />
+        <option value="$PROJECT_DIR$/frontend/templates/useful_websites.html" />
+        <option value="$PROJECT_DIR$/static/css/esports_pages/style.css" />
+        <option value="$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js" />
+        <option value="$PROJECT_DIR$/frontend/templates/lolpros.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2557" />
-    <option name="y" value="136" />
-    <option name="width" value="3006" />
-    <option name="height" value="1944" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-748" />
+    <option name="y" value="111" />
+    <option name="width" value="2505" />
+    <option name="height" value="1620" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,7 +263,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,10 +305,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2345" y="91" width="2004" height="1296" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14997458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19497687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -338,8 +347,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/swiper/swiper-bundle.min.js" />
-    <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" />
     <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap-utilities.rtl.css" />
     <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" />
     <entry file="file://$PROJECT_DIR$/static/js/esports_pages/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" />
@@ -393,9 +400,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/background.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/background.png" />
     <entry file="file://$PROJECT_DIR$/static/img/banner1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -405,34 +410,6 @@
     <entry file="file://$PROJECT_DIR$/static/img/phantom.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/lolfandom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/lolesports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/lolpros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/game_glossary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/phantom/phantom/themes/phantom/dark/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -440,48 +417,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/esports_glossary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="38" selection-start-line="2" selection-start-column="1" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/template_inheritance/bootstrap.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="4129" column="28" selection-start-line="4129" selection-start-column="28" selection-end-line="4129" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/wrong_url.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="78" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -498,17 +437,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/market.py.py" />
-    <entry file="file://$PROJECT_DIR$/frontend/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="110" column="51" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7020">
@@ -518,50 +446,6 @@
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/about_esports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="333" column="51" selection-start-line="333" selection-start-column="51" selection-end-line="333" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="1862" column="39" selection-start-line="1862" selection-start-column="37" selection-end-line="1862" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="1698" selection-start-line="1698" selection-end-line="1702" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/about_game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="361" column="23" selection-start-line="361" selection-start-column="23" selection-end-line="361" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -585,27 +469,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/template_inheritance.html">
+    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="409">
+          <caret line="2259" column="20" selection-start-line="2259" selection-start-column="3" selection-end-line="2259" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/frontend/templates/about_game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/useful_websites.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="300" column="50" lean-forward="true" selection-start-line="300" selection-start-column="50" selection-end-line="300" selection-end-column="50" />
+        <state relative-caret-position="794">
+          <caret line="318" selection-start-line="318" selection-end-line="318" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
@@ -617,30 +491,164 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/game_glossary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/esports_glossary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1055">
+          <caret line="51" lean-forward="true" selection-start-line="16" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/wrong_url.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="63" column="44" lean-forward="true" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/about_esports_glossary1.jpg" />
+    <entry file="file://$PROJECT_DIR$/frontend/templates/lolesports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="187" column="19" lean-forward="true" selection-start-line="187" selection-start-column="19" selection-end-line="187" selection-end-column="19" />
+        <state relative-caret-position="524">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="14" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/home_page/style.css">
+    <entry file="file://$PROJECT_DIR$/frontend/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="383" column="35" lean-forward="true" selection-start-line="383" selection-end-line="383" selection-end-column="35" />
+        <state relative-caret-position="351">
+          <caret line="64" column="93" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="93" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/templates/account.html">
+    <entry file="file://$PROJECT_DIR$/frontend/templates/lolfandom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/useful_websites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="153" column="75" lean-forward="true" selection-start-line="153" selection-start-column="75" selection-end-line="165" selection-end-column="33" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/about_esports_glossary.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/template_inheritance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="65" column="88" selection-start-line="65" selection-start-column="88" selection-end-line="65" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/about_esports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="54" column="32" selection-start-line="53" selection-start-column="27" selection-end-line="54" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/template_inheritance/accessability_features.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/esports_pages/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/home_page/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="629" column="25" lean-forward="true" selection-start-line="628" selection-start-column="1" selection-end-line="629" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/lolpros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,8 +5,11 @@ Login Page
 {% block content %}
 
 
-<body class="text-center mt-5">
-
+<body class="text-center ">
+<!-- Margin break -->
+<section class="intro-single">
+</section>
+<!-- Margin break-end -->
 
 <div class="container col-md-3 ">
     <h1>Login</h1>
@@ -20,9 +23,10 @@ Login Page
         <br>
         {{ form.submit(class="btn-sm btn btn-a") }}
         <br>
-<br>
+<br
             <p> Need a new account?</p>
             <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
+
     </form>
 </div>
 </body>

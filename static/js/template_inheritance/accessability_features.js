@@ -8,6 +8,7 @@ $(document).ready(function(){
         $('p').animate({ "font-size" : "12px" });
         $('.col-form-label').animate({ "font-size" : "12px" });
         $('.form-control').animate({ "font-size" : "12px" });
+          $('li').animate({ "font-size" : "12px" });
 
 
     });
@@ -20,6 +21,7 @@ $(document).ready(function(){
         $('p').animate({ "font-size" : "16px" });
         $('.col-form-label').animate({ "font-size" : "16px" });
         $('.form-control').animate({ "font-size" : "16px" });
+        $('li').animate({ "font-size" : "16px" });
 
 
 
@@ -33,6 +35,7 @@ $(document).ready(function(){
         $('p').animate({ "font-size" : "22px" });
         $('.col-form-label').animate({ "font-size" : "22px" });
         $('.form-control').animate({ "font-size" : "22px" });
+        $('li').animate({ "font-size" : "22px" });
 
     });
 
@@ -44,6 +47,7 @@ $(document).ready(function(){
         $('p').animate({ "font-size" : "26px" , "line-height" : "26px"});
         $('.col-form-label').animate({ "font-size" : "26px" });
         $('.form-control').animate({ "font-size" : "26px" });
+        $('li').animate({ "font-size" : "26px" });
     });
 
     $("a").click(function(){
