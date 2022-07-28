@@ -17,11 +17,7 @@ from backend.db_modeles import Note
 import smtplib
 from email.message import EmailMessage
 
-
 views = Blueprint('views', __name__)
-
-
-
 
 
 @app.route("/home")
@@ -125,11 +121,9 @@ def update_note(id):
 
 @app.route("/contact.html", methods=['GET', 'POST'])
 def contact_page():
-
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login("lolesportshub@gmail.com", "ptdbuoiqvfnhpcvo")
-
 
     if request.method == 'POST':
         msg_confirmation = EmailMessage()

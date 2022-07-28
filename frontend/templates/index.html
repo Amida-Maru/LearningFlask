@@ -13,14 +13,14 @@
     <link href="/static/fav_icon.png" rel="shortcut icon" type="image/x-icon">
     <!-- styled CSS -->
     <link href="/static/css/home_page/style.css" rel="stylesheet">
-       <!-- bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <!-- bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
 
 
 </head>
 
 <body>
- <!-- page animation -->
+<!-- page animation -->
 <div class="preloader">
     <div class="loading-mask"></div>
     <div class="loading-mask"></div>
@@ -30,236 +30,219 @@
 </div>
 
 
+<!-- snap to scroll-->
 
 
-  <!-- snap to scroll-->
-
-
-
-
-
- <!-- logo-->
+<!-- logo-->
 
 <div class="container-heading-logo">
     <img alt="" src="/static/img/phantom.png">
 </div>
 
- <!-- text area 1-->
+<!-- text area 1-->
 <section class="screen1">
-<div class="container-text1">
-    <div class="page-title home text-center">
-    <h1 style="text-align:center;">ESPORTS IN LEAGUE OF LEGENDS</h1>
-        <h3 style="text-align:center;">The goal of this website is to present fundamental information
-        about League of Legends and its esports ecosystem
-        in an accessible and straightforward way.</h3>
-
-    <p>Therefore, even if you have never played the game
-        and have not participated in any esports events yet,
-        do not worry as the "ABOUT GAME" and "ABOUT ESPORTS" sections have you covered!
-        Did you know that the content of this website has been designed with complete beginners in mind?
-        You can expect only easy to follow articles supplemented by beginner friendly videos
-        and references to helpful 3rd party websites under the "USEFUL WEBSITES" section. In other words, everything to get
-        you started exploring and enjoying the incredible world of esports in League of Legends in no time!
-    </p>
-</div>
+    <div class="container-text1">
+        <div class="page-title home text-center">
+            <h1 style="text-align:center;">ESPORTS IN LEAGUE OF LEGENDS</h1>
+            <h3 style="text-align:center;">The goal of this website is to present fundamental information
+                about League of Legends and its esports ecosystem
+                in an accessible and straightforward way.</h3>
+            <p>Therefore, even if you have never played the game
+                and have not participated in any esports events yet,
+                do not worry as the "ABOUT GAME" and "ABOUT ESPORTS" sections have you covered!
+                Did you know that the content of this website has been designed with complete beginners in mind?
+                You can expect only easy to follow articles supplemented by beginner friendly videos
+                and references to helpful 3rd party websites under the "USEFUL WEBSITES" section. In other words,
+                everything to get
+                you started exploring and enjoying the incredible world of esports in League of Legends in no time!
+            </p>
+        </div>
     </div>
 
 
+    <!-- hex symbols -->
 
-
-
- <!-- hex symbols -->
-
-<div class="content-box-lg">
-    <div class="container">
-        <div class="row">
-<div class="container-heading ">
-    <div class="hexagon-menu clear">
-        <div class="hexagon-item">
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <a class="hex-content" href="{{ url_for('about_game') }}">
+    <div class="content-box-lg">
+        <div class="container">
+            <div class="row">
+                <div class="container-heading ">
+                    <div class="hexagon-menu clear">
+                        <div class="hexagon-item">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a class="hex-content" href="{{ url_for('about_game') }}">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="bi bi-star-fill"></i>
                                                 </span>
                                                 <span class="title">About Game</span>
                                             </span>
-                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                          fill="#1e2530"></path>
-                </svg>
-            </a>
-        </div>
-        <div class="hexagon-item">
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <a class="hex-content" href="{{ url_for('about_esports') }}">
+                                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                          fill="#1e2530"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a class="hex-content" href="{{ url_for('about_esports') }}">
                                             <span class="hex-content-inner">
                                                  <span class="icon">
                                                     <i class="bi bi-fire"></i>
                                                 </span>
                                                 <span class="title">About Esports </span>
                                             </span>
-                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                          fill="#1e2530"></path>
-                </svg>
-            </a>
-        </div>
-
-        <div class="hexagon-item">
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <a class="hex-content" href="{{ url_for('useful_websites') }}">
+                                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                          fill="#1e2530"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a class="hex-content" href="{{ url_for('useful_websites') }}">
                                             <span class="hex-content-inner">
                                                  <span class="icon">
                                                     <i class="bi bi-bookmark-heart-fill"></i>
                                                 </span>
                                                 <span class="title">Useful Websites </span>
                                             </span>
-                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                          fill="#1e2530"></path>
-                </svg>
-            </a>
-        </div>
-    </div> <!-- /.hexagon-menu -->
-</div>
+                                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                          fill="#1e2530"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div> <!-- /.hexagon-menu -->
                 </div>
+            </div>
         </div>
     </div>
-</div>
+    <!-- end of first header -->
 
 
-
-<!-- end of first header -->
-
-
-<!-- start of second header -->
+    <!-- start of second header -->
 </section> <!-- end of first section -->
- <div class="container-space"></div>
+<div class="container-space"></div>
 <section class="screen2">
-<div class="container-text2">
-                        <div class="page-title home text-center">
-<h1 style="text-align:center;">ACCOUNT AND CONTACT</h1>
-                            <h3 style="text-align:center;" >The website has been designed with the user-centred approach. That means that the development team
-                              works closely with the users to make the website even more user-friendly and accessible.</h3>
-
-                            <p>Did you know that you can
-                                create your own notes about the game, esports, etc. as part of the website functionality? Just check the "ACCOUNT" section for details.
-                                On top of that the notes are colour-coded and editable so you can update them as your knowledge improves...
-                                 You are also welcome to contact the development team under the "CONTACT" section were you can send us an email for example how
-                                to make the website even better...
-                            </p>
-                        </div>
-                        </div>
-
-
-
-
+    <div class="container-text2">
+        <div class="page-title home text-center">
+            <h1 style="text-align:center;">ACCOUNT AND CONTACT</h1>
+            <h3 style="text-align:center;">The website has been designed with the user-centred approach. That means that
+                the development team
+                works closely with the users to make the website even more user-friendly and accessible.</h3>
+            <p>Did you know that you can
+                create your own notes about the game, esports, etc. as part of the website functionality? Just check the
+                "ACCOUNT" section for details.
+                On top of that the notes are colour-coded and editable so you can update them as your knowledge
+                improves...
+                You are also welcome to contact the development team under the "CONTACT" section were you can send us an
+                email for example how
+                to make the website even better...
+            </p>
+        </div>
+    </div>
     <div class="content-box-lg ">
-    <div class="container ">
-        <div class="row">
-<div class="container-heading ">
-    <div class="hexagon-menu clear">
-        <div class="hexagon-item">
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <a class="hex-content" href="{{ url_for('contact_page') }}">
+        <div class="container ">
+            <div class="row">
+                <div class="container-heading ">
+                    <div class="hexagon-menu clear">
+                        <div class="hexagon-item">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a class="hex-content" href="{{ url_for('contact_page') }}">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="bi bi-envelope-plus-fill"></i>
                                                 </span>
                                                 <span class="title">Contact</span>
                                             </span>
-                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                          fill="#1e2530"></path>
-                </svg>
-            </a>
-        </div>
-        <div class="hexagon-item">
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="hex-item">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <a class="hex-content" href="{{ url_for('account_page') }}">
+                                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                          fill="#1e2530"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hexagon-item">
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="hex-item">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <a class="hex-content" href="{{ url_for('account_page') }}">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="bi bi-file-person"></i>
                                                 </span>
                                                 <span class="title">Account</span>
                                             </span>
-                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                          fill="#1e2530"></path>
-                </svg>
-            </a>
-        </div>
+                                <svg height="200" version="1.1" viewbox="0 0 173.20508075688772 200" width="174"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                          fill="#1e2530"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <footer class="text-center position-fixed">
+                    Copyright &copy; 2022 League of Legends - Esports Hub
+                </footer>
+            </div>
         </div>
     </div>
-    </div>
-<div class="container">
-           <div class="row">
-<footer class="text-center position-fixed">
-    Copyright &copy; 2022 League of Legends - Esports Hub
-</footer>
-    </div>
-</div>
-    </section>
-
-
+</section>
 </body>
 </html>
 
-<!-- ================================
-JavaScript Libraries
-================================= -->
+<!--JavaScript files-->
 <script src="/static/js/home_page/jquery-2.2.4.min.js"></script>
 <script src="/static/js/home_page/isotope.pkgd.min.js"></script>
 <script src="/static/js/home_page/jquery.nicescroll.min.js"></script>

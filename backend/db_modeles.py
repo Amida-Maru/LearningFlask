@@ -3,6 +3,8 @@ from backend import bcrypt
 from backend import login_manager
 from flask_login import UserMixin
 from sqlalchemy.sql import func
+
+
 # noinspection PyUnresolvedReferences
 
 
@@ -18,13 +20,11 @@ class User(db.Model, UserMixin):
     password_hash = db.Column(db.String(length=512), nullable=False)
     notes = db.relationship('Note')
 
-
-
     @property
     def password(self):
         return self.password
 
-    #This setter takes the plain password from a user and using the bcrypt.generate method creates a secure hash
+    # This setter takes the plain password from a user and using the bcrypt.generate method creates a secure hash
     @password.setter
     def password(self, plain_text_password):
         self.password_hash = bcrypt.generate_password_hash(plain_text_password).decode('utf-8')
@@ -43,4 +43,3 @@ class Note(db.Model):
 
     def __repr__(self):
         return f'User {self.name}'
-

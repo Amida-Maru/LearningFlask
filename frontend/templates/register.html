@@ -10,7 +10,6 @@ Register Page
 </section>
 <!-- Margin break-end -->
 <body class="text-center">
-
 <div class="container col-md-3">
     <h1>New Account</h1>
     <form action="{{register_page}}" class="form-control form-control-lg form-control-a" method="POST" role="form">
@@ -27,9 +26,9 @@ Register Page
         <br>
         {{ form.submit(class="btn-sm btn btn-a") }}
         <br>
-            <br>
-            <p> Already have an account?</p>
-            <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Log in</a>
+        <br>
+        <p> Already have an account?</p>
+        <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Log in</a>
     </form>
 </div>
 </body>

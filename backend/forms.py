@@ -8,10 +8,9 @@ from wtforms.validators import ValidationError
 from backend.db_modeles import User
 
 
-
 class RegisterForm(FlaskForm):
-
     """First Level of validation against the existing records in the database"""
+
     # This method verifies if the given username already exists in the database
     def validate_username(self, username_for_checking):
         user = User.query.filter_by(username=username_for_checking.data).first()
@@ -33,8 +32,6 @@ class RegisterForm(FlaskForm):
 
 
 class LoginForm(FlaskForm):
-
     username = StringField(label='User Name:', validators=[data_required()])
     password = PasswordField(label='Password:', validators=[data_required()])
     submit = SubmitField(label='Log in')
-
